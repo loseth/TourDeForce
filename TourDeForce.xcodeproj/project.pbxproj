@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B35218B254825E90056294D /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B35218A254825E90056294D /* DataController.swift */; };
 		1BF229EF25481BDF00051A4A /* TourDeForceApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF229EE25481BDF00051A4A /* TourDeForceApp.swift */; };
 		1BF229F125481BDF00051A4A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF229F025481BDF00051A4A /* ContentView.swift */; };
 		1BF229F325481BE700051A4A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BF229F225481BE700051A4A /* Assets.xcassets */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1B35218A254825E90056294D /* DataController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 		1BF229EB25481BDF00051A4A /* TourDeForce.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TourDeForce.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BF229EE25481BDF00051A4A /* TourDeForceApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TourDeForceApp.swift; sourceTree = "<group>"; };
 		1BF229F025481BDF00051A4A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -55,6 +57,7 @@
 			isa = PBXGroup;
 			children = (
 				1BF229EE25481BDF00051A4A /* TourDeForceApp.swift */,
+				1B35218A254825E90056294D /* DataController.swift */,
 				1BF229F025481BDF00051A4A /* ContentView.swift */,
 				1BF229F225481BE700051A4A /* Assets.xcassets */,
 				1BF229F725481BE700051A4A /* Info.plist */,
@@ -142,6 +145,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1BF22A012548227A00051A4A /* Main.xcdatamodeld in Sources */,
+				1B35218B254825E90056294D /* DataController.swift in Sources */,
 				1BF229F125481BDF00051A4A /* ContentView.swift in Sources */,
 				1BF229EF25481BDF00051A4A /* TourDeForceApp.swift in Sources */,
 			);
