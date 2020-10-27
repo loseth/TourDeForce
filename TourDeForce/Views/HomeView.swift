@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct HomeView: View {
+    // Optional becuase @SceneStorage in ContentView is optional
+    static let tag: String? = "Home"
+    
     @EnvironmentObject var dataController: DataController
     
     var body: some View {
