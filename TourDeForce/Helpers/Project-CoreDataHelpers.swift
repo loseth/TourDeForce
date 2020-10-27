@@ -2,7 +2,7 @@
 //  Project-CoreDataHelpers.swift
 //  TourDeForce
 //
-//  Created by Tor1 on 2020-10-24.
+//  Created by Tor Rafsol Løseth on 2020-10-24.
 //
 
 import Foundation

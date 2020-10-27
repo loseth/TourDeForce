@@ -10,9 +10,9 @@
 		1B35218B254825E90056294D /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B35218A254825E90056294D /* DataController.swift */; };
 		1B35218F2548283B0056294D /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B35218D2548283B0056294D /* HomeView.swift */; };
 		1B3521902548283B0056294D /* ProjectsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B35218E2548283B0056294D /* ProjectsView.swift */; };
-		1B352193254828480056294D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B352192254828480056294D /* ContentView.swift */; };
 		1B352199254829B50056294D /* Project-CoreDataHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B352197254829B50056294D /* Project-CoreDataHelpers.swift */; };
 		1B35219A254829B50056294D /* Item-CoreDataHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B352198254829B50056294D /* Item-CoreDataHelpers.swift */; };
+		1B35219D25482BA80056294D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B35219C25482BA80056294D /* ContentView.swift */; };
 		1BF229EF25481BDF00051A4A /* TourDeForceApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF229EE25481BDF00051A4A /* TourDeForceApp.swift */; };
 		1BF229F325481BE700051A4A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BF229F225481BE700051A4A /* Assets.xcassets */; };
 		1BF229F625481BE700051A4A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BF229F525481BE700051A4A /* Preview Assets.xcassets */; };
@@ -23,9 +23,9 @@
 		1B35218A254825E90056294D /* DataController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 		1B35218D2548283B0056294D /* HomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		1B35218E2548283B0056294D /* ProjectsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectsView.swift; sourceTree = "<group>"; };
-		1B352192254828480056294D /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContentView.swift; path = ../../../../../../Desktop/TourDeForce/ContentView.swift; sourceTree = "<group>"; };
 		1B352197254829B50056294D /* Project-CoreDataHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Project-CoreDataHelpers.swift"; sourceTree = "<group>"; };
 		1B352198254829B50056294D /* Item-CoreDataHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Item-CoreDataHelpers.swift"; sourceTree = "<group>"; };
+		1B35219C25482BA80056294D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		1BF229EB25481BDF00051A4A /* TourDeForce.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TourDeForce.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BF229EE25481BDF00051A4A /* TourDeForceApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TourDeForceApp.swift; sourceTree = "<group>"; };
 		1BF229F225481BE700051A4A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -45,6 +45,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1B35219F25482C130056294D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1B35219C25482BA80056294D /* ContentView.swift */,
+				1B35218D2548283B0056294D /* HomeView.swift */,
+				1B35218E2548283B0056294D /* ProjectsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1B3521A125482C240056294D /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				1B352198254829B50056294D /* Item-CoreDataHelpers.swift */,
+				1B352197254829B50056294D /* Project-CoreDataHelpers.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		1B3521A325482C4B0056294D /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1B35218A254825E90056294D /* DataController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		1B3521A525482C540056294D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1BF229FF2548227A00051A4A /* Main.xcdatamodeld */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		1BF229E225481BDF00051A4A = {
 			isa = PBXGroup;
 			children = (
@@ -65,16 +100,13 @@
 			isa = PBXGroup;
 			children = (
 				1BF229EE25481BDF00051A4A /* TourDeForceApp.swift */,
-				1B35218A254825E90056294D /* DataController.swift */,
-				1B352192254828480056294D /* ContentView.swift */,
+				1B3521A525482C540056294D /* Models */,
+				1B35219F25482C130056294D /* Views */,
+				1B3521A325482C4B0056294D /* Controllers */,
+				1B3521A125482C240056294D /* Helpers */,
 				1BF229F225481BE700051A4A /* Assets.xcassets */,
-				1B35218D2548283B0056294D /* HomeView.swift */,
-				1B352198254829B50056294D /* Item-CoreDataHelpers.swift */,
-				1B352197254829B50056294D /* Project-CoreDataHelpers.swift */,
-				1B35218E2548283B0056294D /* ProjectsView.swift */,
 				1BF229F725481BE700051A4A /* Info.plist */,
 				1BF229F425481BE700051A4A /* Preview Content */,
-				1BF229FF2548227A00051A4A /* Main.xcdatamodeld */,
 			);
 			path = TourDeForce;
 			sourceTree = "<group>";
@@ -158,8 +190,8 @@
 			files = (
 				1B3521902548283B0056294D /* ProjectsView.swift in Sources */,
 				1BF22A012548227A00051A4A /* Main.xcdatamodeld in Sources */,
+				1B35219D25482BA80056294D /* ContentView.swift in Sources */,
 				1B352199254829B50056294D /* Project-CoreDataHelpers.swift in Sources */,
-				1B352193254828480056294D /* ContentView.swift in Sources */,
 				1B35218B254825E90056294D /* DataController.swift in Sources */,
 				1B35218F2548283B0056294D /* HomeView.swift in Sources */,
 				1BF229EF25481BDF00051A4A /* TourDeForceApp.swift in Sources */,
