@@ -18,6 +18,7 @@ struct HomeView: View {
             VStack {
                 Button("Add Data") {
                     dataController.deleteAll()
+                    dataController.save()
                     try? dataController.createSampleData()
                 }
             }
