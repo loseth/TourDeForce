@@ -2,7 +2,7 @@
 //  ItemRowView.swift
 //  TourDeForce
 //
-//  Created by Tor1 on 2020-10-27.
+//  Created by Tor Rafsol Løseth on 2020-10-27.
 //
 
 import SwiftUI

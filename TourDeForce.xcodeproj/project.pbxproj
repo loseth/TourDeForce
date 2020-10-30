@@ -11,13 +11,14 @@
 		1B0A1FDC254839A4006D0605 /* ItemRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B0A1FDB254839A4006D0605 /* ItemRowView.swift */; };
 		1B0A1FDF25483D28006D0605 /* Binding-OnChange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B0A1FDE25483D28006D0605 /* Binding-OnChange.swift */; };
 		1B0A200D254BFE3A006D0605 /* ProjectHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B0A200C254BFE3A006D0605 /* ProjectHeaderView.swift */; };
-		1B0A2011254C0B89006D0605 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B0A2010254C0B89006D0605 /* Colors.xcassets */; };
+		1B0A2015254C0DDB006D0605 /* EditProjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B0A2014254C0DDB006D0605 /* EditProjectView.swift */; };
 		1B35218B254825E90056294D /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B35218A254825E90056294D /* DataController.swift */; };
 		1B35218F2548283B0056294D /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B35218D2548283B0056294D /* HomeView.swift */; };
 		1B3521902548283B0056294D /* ProjectsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B35218E2548283B0056294D /* ProjectsView.swift */; };
 		1B352199254829B50056294D /* Project-CoreDataHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B352197254829B50056294D /* Project-CoreDataHelpers.swift */; };
 		1B35219A254829B50056294D /* Item-CoreDataHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B352198254829B50056294D /* Item-CoreDataHelpers.swift */; };
 		1B35219D25482BA80056294D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B35219C25482BA80056294D /* ContentView.swift */; };
+		1B473834254C33AF00DFC623 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B473833254C33AF00DFC623 /* Colors.xcassets */; };
 		1BF229EF25481BDF00051A4A /* TourDeForceApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF229EE25481BDF00051A4A /* TourDeForceApp.swift */; };
 		1BF229F325481BE700051A4A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BF229F225481BE700051A4A /* Assets.xcassets */; };
 		1BF229F625481BE700051A4A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BF229F525481BE700051A4A /* Preview Assets.xcassets */; };
@@ -29,13 +30,14 @@
 		1B0A1FDB254839A4006D0605 /* ItemRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemRowView.swift; sourceTree = "<group>"; };
 		1B0A1FDE25483D28006D0605 /* Binding-OnChange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Binding-OnChange.swift"; sourceTree = "<group>"; };
 		1B0A200C254BFE3A006D0605 /* ProjectHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectHeaderView.swift; sourceTree = "<group>"; };
-		1B0A2010254C0B89006D0605 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		1B0A2014254C0DDB006D0605 /* EditProjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProjectView.swift; sourceTree = "<group>"; };
 		1B35218A254825E90056294D /* DataController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 		1B35218D2548283B0056294D /* HomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		1B35218E2548283B0056294D /* ProjectsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectsView.swift; sourceTree = "<group>"; };
 		1B352197254829B50056294D /* Project-CoreDataHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Project-CoreDataHelpers.swift"; sourceTree = "<group>"; };
 		1B352198254829B50056294D /* Item-CoreDataHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Item-CoreDataHelpers.swift"; sourceTree = "<group>"; };
 		1B35219C25482BA80056294D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		1B473833254C33AF00DFC623 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		1BF229EB25481BDF00051A4A /* TourDeForce.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TourDeForce.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BF229EE25481BDF00051A4A /* TourDeForceApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TourDeForceApp.swift; sourceTree = "<group>"; };
 		1BF229F225481BE700051A4A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -68,6 +70,7 @@
 			children = (
 				1B35219C25482BA80056294D /* ContentView.swift */,
 				1B0A1FD725483386006D0605 /* EditItemView.swift */,
+				1B0A2014254C0DDB006D0605 /* EditProjectView.swift */,
 				1B35218D2548283B0056294D /* HomeView.swift */,
 				1B0A1FDB254839A4006D0605 /* ItemRowView.swift */,
 				1B0A200C254BFE3A006D0605 /* ProjectHeaderView.swift */,
@@ -127,9 +130,9 @@
 				1B0A1FE125483FB6006D0605 /* Extensions */,
 				1B3521A125482C240056294D /* Helpers */,
 				1BF229F225481BE700051A4A /* Assets.xcassets */,
-				1B0A2010254C0B89006D0605 /* Colors.xcassets */,
 				1BF229F725481BE700051A4A /* Info.plist */,
 				1BF229F425481BE700051A4A /* Preview Content */,
+				1B473833254C33AF00DFC623 /* Colors.xcassets */,
 			);
 			path = TourDeForce;
 			sourceTree = "<group>";
@@ -199,7 +202,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1B0A2011254C0B89006D0605 /* Colors.xcassets in Resources */,
+				1B473834254C33AF00DFC623 /* Colors.xcassets in Resources */,
 				1BF229F625481BE700051A4A /* Preview Assets.xcassets in Resources */,
 				1BF229F325481BE700051A4A /* Assets.xcassets in Resources */,
 			);
@@ -216,6 +219,7 @@
 				1B0A200D254BFE3A006D0605 /* ProjectHeaderView.swift in Sources */,
 				1BF22A012548227A00051A4A /* Main.xcdatamodeld in Sources */,
 				1B35219D25482BA80056294D /* ContentView.swift in Sources */,
+				1B0A2015254C0DDB006D0605 /* EditProjectView.swift in Sources */,
 				1B352199254829B50056294D /* Project-CoreDataHelpers.swift in Sources */,
 				1B0A1FDC254839A4006D0605 /* ItemRowView.swift in Sources */,
 				1B35218B254825E90056294D /* DataController.swift in Sources */,

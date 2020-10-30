@@ -8,16 +8,19 @@
 import Foundation
 
 extension Project {
+    // Colors ordered for most pleasing appearance in color grid
+    static let colors = ["Pink", "Purple", "Red", "Orange", "Gold", "Green", "Teal", "Light Blue", "Dark Blue", "Midnight", "Dark Gray", "Gray"]
+    
     var projectTitle: String {
         title ?? "New project"
     }
     
     var projectDetail: String {
-        title ?? ""
+        detail ?? ""
     }
     
     var projectColor: String {
-        title ?? "Light Blue"
+        color ?? "Light Blue"
     }
     
     var projectItems: [Item] {

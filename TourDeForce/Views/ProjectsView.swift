@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ProjectsView: View {
-    // Optional becuase @SceneStorage in ContentView is optional
+    // Optional because @SceneStorage in ContentView is optional
     static let openTag: String? = "Open"
     static let closedTag: String? = "Closed"
     

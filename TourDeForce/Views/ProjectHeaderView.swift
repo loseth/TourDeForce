@@ -2,7 +2,7 @@
 //  ProjectHeaderView.swift
 //  TourDeForce
 //
-//  Created by Tor1 on 2020-10-30.
+//  Created by Tor Rafsol Løseth on 2020-10-30.
 //
 
 import SwiftUI
@@ -20,7 +20,7 @@ struct ProjectHeaderView: View {
             
             Spacer()
             
-            NavigationLink(destination: EmptyView()) {
+            NavigationLink(destination: EditProjectView(project: project)) {
                 Image(systemName: "square.and.pencil")
                     .imageScale(.large)
             }
