@@ -33,7 +33,20 @@ struct ProjectsView: View {
                         ForEach(project.projectItems) { item in
                             ItemRowView(item: item)
                         }
-                        
+                        .onDelete { offsets in
+                            // allItems will hold all items even if we delete items from Core Data
+                            let allItems = project.projectItems
+                            
+                            for offset in offsets {
+                                let item = allItems[offset]
+                                // This will hold on to items and delete all at the end of the run loop
+                                dataController.delete(item)
+                            }
+                            
+                            // This however will delete all pending items immediately
+//                            dataController.container.viewContext.processPendingChanges()
+                            dataController.save()
+                        }
                     }
                 }
             }
