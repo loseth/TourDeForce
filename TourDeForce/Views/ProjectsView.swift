@@ -15,6 +15,8 @@ struct ProjectsView: View {
     @EnvironmentObject var dataController: DataController
     @Environment(\.managedObjectContext) var managedObjectContext
     
+    @State private var showingSortOrder = false
+    
     let showClosedProjects: Bool
     let projects: FetchRequest<Project>
     
@@ -44,7 +46,7 @@ struct ProjectsView: View {
                             }
                             
                             // This however will delete all pending items immediately
-//                            dataController.container.viewContext.processPendingChanges()
+                            //                            dataController.container.viewContext.processPendingChanges()
                             dataController.save()
                         }
                         
@@ -78,6 +80,13 @@ struct ProjectsView: View {
                         Label("Add Project", systemImage: "plus")
                     }
                 }
+            }
+            .actionSheet(isPresented: $showingSortOrder) {
+                ActionSheet(title: Text("Sort items"), message: nil, buttons: [
+                    .default(Text("Optimized")) { },
+                    .default(Text("Creation Date")) { },
+                    .default(Text("Title")) { }
+                ])
             }
         }
     }
