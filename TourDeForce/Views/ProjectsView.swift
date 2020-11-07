@@ -30,7 +30,7 @@ struct ProjectsView: View {
             List {
                 ForEach(projects.wrappedValue) { project in
                     Section(header: ProjectHeaderView(project: project)) {
-                        ForEach(project.projectItems) { item in
+                        ForEach(items(for: project)) { item in
                             ItemRowView(item: item)
                         }
                         .onDelete { offsets in
@@ -80,6 +80,10 @@ struct ProjectsView: View {
                 }
             }
         }
+    }
+    
+    func items(for project: Project) -> [Item] {
+        []
     }
 }
 
