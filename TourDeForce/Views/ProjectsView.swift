@@ -105,9 +105,9 @@ struct ProjectsView: View {
     func items(for project: Project) -> [Item] {
         switch sortOrder {
         case .title:
-            return project.projectItems.sorted { $0.itemTitle < $1.itemTitle }
+            return project.projectItems(sortedBy: \Item.itemTitle)
         case .creationDate:
-            return project.projectItems.sorted { $0.itemCreationDate < $1.itemCreationDate }
+            return project.projectItems(sortedBy: \Item.itemCreationDate)
         case .optimized:
             return project.projectItemsDefaultSorted
         }

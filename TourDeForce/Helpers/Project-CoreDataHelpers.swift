@@ -70,4 +70,10 @@ extension Project {
         
         return project
     }
+    
+    func projectItems<Value: Comparable>(sortedBy keyPath: KeyPath<Item, Value>) -> [Item] {
+        projectItems.sorted {
+            $0[keyPath: keyPath] < $1[keyPath: keyPath]
+        }
+    }
 }
