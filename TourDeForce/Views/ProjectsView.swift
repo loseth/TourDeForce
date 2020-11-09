@@ -105,9 +105,13 @@ struct ProjectsView: View {
     func items(for project: Project) -> [Item] {
         switch sortOrder {
         case .title:
-            return project.projectItems(sortedBy: \Item.itemTitle)
+//            return project.projectItems.sorted { $0.itemTitle < $1.itemTitle }
+//            return project.projectItems(sortedBy: \Item.itemTitle)  // from file Project-CoreDataHelpers
+            return project.projectItems.sorted(by: \Item.itemTitle) // from file Sequence-Sorting
         case .creationDate:
-            return project.projectItems(sortedBy: \Item.itemCreationDate)
+//            return project.projectItems.sorted { $0.itemCreationDate < $1.itemCreationDate }
+//            return project.projectItems(sortedBy: \Item.itemCreationDate) // from file Project-CoreDataHelpers
+            return project.projectItems.sorted(by: \Item.itemCreationDate) // from file Sequence-Sorting
         case .optimized:
             return project.projectItemsDefaultSorted
         }

@@ -71,6 +71,9 @@ extension Project {
         return project
     }
     
+//    Used in func items(for project: Project) -> [Item] in file "ProjectsView"
+//    Then it is later moved to file Sequence-Sorting and made generic.
+//
     func projectItems<Value: Comparable>(sortedBy keyPath: KeyPath<Item, Value>) -> [Item] {
         projectItems.sorted {
             $0[keyPath: keyPath] < $1[keyPath: keyPath]
