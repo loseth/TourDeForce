@@ -17,6 +17,12 @@ struct ProjectsView: View {
     
     @State private var showingSortOrder = false
     @State private var sortOrder = Item.SortOrder.optimized
+    @State private var sortingKeyPath: PartialKeyPath<Item>?
+    
+    let sortingKeyPaths = [
+        \Item.itemTitle,
+        \Item.itemCreationDate
+    ]
     
     let showClosedProjects: Bool
     let projects: FetchRequest<Project>
@@ -94,25 +100,27 @@ struct ProjectsView: View {
             }
             .actionSheet(isPresented: $showingSortOrder) {
                 ActionSheet(title: Text("Sort items"), message: nil, buttons: [
-                    .default(Text("Optimized")) { sortOrder = .optimized },
-                    .default(Text("Creation Date")) { sortOrder = .creationDate },
-                    .default(Text("Title")) { sortOrder = .title }
+                    .default(Text("Optimized")) { sortingKeyPath = nil },
+                    .default(Text("Creation Date")) { sortingKeyPath = \Item.itemCreationDate },
+                    .default(Text("Title")) { sortingKeyPath = \Item.itemTitle }
                 ])
             }
         }
     }
     
     func items(for project: Project) -> [Item] {
-        switch sortOrder {
-        case .title:
-            return project.projectItems.sorted { $0.itemTitle < $1.itemTitle }
-        case .creationDate:
-            return project.projectItems.sorted { $0.itemCreationDate < $1.itemCreationDate }
-        case .optimized:
-            return project.projectItemsDefaultSorted
+        if let sortingKeyPath = sortingKeyPath {
+            if sortingKeyPath == \Item.itemTitle {
+                return project.projectItems.sorted(by: sortingKeyPath, as: String.self)
+            } else if sortingKeyPath == \Item.itemCreationDate {
+                return project.projectItems.sorted(by: sortingKeyPath, as: Date.self)
+            }
         }
+        
+        return project.projectItemsDefaultSorted
     }
 }
+
 
 struct ProjectsView_Previews: PreviewProvider {
     static var dataController = DataController.preview
