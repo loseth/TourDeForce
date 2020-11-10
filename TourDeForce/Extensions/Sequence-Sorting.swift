@@ -7,12 +7,11 @@
 
 import Foundation
 
-// Alternatives to using enums for sorting: KeyPaths/PartialKeyPaths or NSSortDescriptor to sort items
+// Alternatives to using enum for sorting: KeyPath
 // Will not be used, not a good idea in this project!
 extension Sequence {
     
     //MARK: - PartialKeyPath
-    //TODO: - Make a branch for PartialKeyPaths to explore alternative to sorting by enum.
     
     func sorted<Value>(by keyPath: PartialKeyPath<Element>, using areInIncreasingOrder: (Value, Value) throws -> Bool) rethrows -> [Element] {
         try self.sorted {
