@@ -18,8 +18,13 @@ struct ProjectsView: View {
     @State private var showingSortOrder = false
     @State private var sortOrder = Item.SortOrder.optimized
     
+    @State var sortDescriptor: NSSortDescriptor?
+    
     let showClosedProjects: Bool
     let projects: FetchRequest<Project>
+    
+    let titleSortDescriptor = NSSortDescriptor(keyPath: \Item.title, ascending: true)
+    let creationDateSortDescriptor = NSSortDescriptor(keyPath: \Item.creationDate, ascending: true)
     
     init(showClosedProjects: Bool) {
         self.showClosedProjects = showClosedProjects
@@ -94,23 +99,18 @@ struct ProjectsView: View {
             }
             .actionSheet(isPresented: $showingSortOrder) {
                 ActionSheet(title: Text("Sort items"), message: nil, buttons: [
-                    .default(Text("Optimized")) { sortOrder = .optimized },
-                    .default(Text("Creation Date")) { sortOrder = .creationDate },
-                    .default(Text("Title")) { sortOrder = .title }
+                    .default(Text("Optimized")) { sortDescriptor = nil },
+                    .default(Text("Creation Date")) { sortDescriptor = creationDateSortDescriptor },
+                    .default(Text("Title")) { sortDescriptor = titleSortDescriptor }
                 ])
             }
         }
     }
     
     func items(for project: Project) -> [Item] {
-        switch sortOrder {
-        case .title:
-            return project.projectItems.sorted { $0.itemTitle < $1.itemTitle }
-        case .creationDate:
-            return project.projectItems.sorted { $0.itemCreationDate < $1.itemCreationDate }
-        case .optimized:
-            return project.projectItemsDefaultSorted
-        }
+        guard let sortDescriptor = sortDescriptor else { return project.projectItemsDefaultSorted }
+        
+        return project.projectItems.sorted(by: sortDescriptor)
     }
 }
 
