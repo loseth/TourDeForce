@@ -17,6 +17,7 @@ struct ProjectsView: View {
     
     @State private var showingSortOrder = false
     @State private var sortOrder = Item.SortOrder.optimized
+    @State private var sortingKeyPath: PartialKeyPath<Item>?
     
     let showClosedProjects: Bool
     let projects: FetchRequest<Project>
@@ -94,23 +95,20 @@ struct ProjectsView: View {
             }
             .actionSheet(isPresented: $showingSortOrder) {
                 ActionSheet(title: Text("Sort items"), message: nil, buttons: [
-                    .default(Text("Optimized")) { sortOrder = .optimized },
-                    .default(Text("Creation Date")) { sortOrder = .creationDate },
-                    .default(Text("Title")) { sortOrder = .title }
+                    .default(Text("Optimized")) { sortingKeyPath = nil },
+                    .default(Text("Creation Date")) { sortingKeyPath = \Item.creationDate },
+                    .default(Text("Title")) { sortingKeyPath = \Item.title }
                 ])
             }
         }
     }
     
     func items(for project: Project) -> [Item] {
-        switch sortOrder {
-        case .title:
-            return project.projectItems.sorted { $0.itemTitle < $1.itemTitle }
-        case .creationDate:
-            return project.projectItems.sorted { $0.itemCreationDate < $1.itemCreationDate }
-        case .optimized:
+        guard let sortingKeyPath = sortingKeyPath else {
             return project.projectItemsDefaultSorted
         }
+        
+        return project.projectItems.sorted(by: sortingKeyPath)
     }
 }
 
