@@ -38,7 +38,7 @@ struct ProjectsView: View {
                     List {
                         ForEach(projects.wrappedValue) { project in
                             Section(header: ProjectHeaderView(project: project)) {
-                                ForEach(items(for: project)) { item in
+                                ForEach(project.projectItems(using: sortOrder)) { item in
                                     ItemRowView(project: project, item: item)
                                 }
                                 .onDelete { offsets in
@@ -52,7 +52,7 @@ struct ProjectsView: View {
                                     }
                                     
                                     // This however will delete all pending items immediately
-                                    //                            dataController.container.viewContext.processPendingChanges()
+                                    // dataController.container.viewContext.processPendingChanges()
                                     dataController.save()
                                 }
                                 
@@ -108,17 +108,6 @@ struct ProjectsView: View {
             }
             
             SelectSomethingView()
-        }
-    }
-    
-    func items(for project: Project) -> [Item] {
-        switch sortOrder {
-        case .title:
-            return project.projectItems.sorted { $0.itemTitle < $1.itemTitle }
-        case .creationDate:
-            return project.projectItems.sorted { $0.itemCreationDate < $1.itemCreationDate }
-        case .optimized:
-            return project.projectItemsDefaultSorted
         }
     }
 }
