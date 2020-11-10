@@ -34,7 +34,7 @@ struct ProjectsView: View {
                 ForEach(projects.wrappedValue) { project in
                     Section(header: ProjectHeaderView(project: project)) {
                         ForEach(items(for: project)) { item in
-                            ItemRowView(item: item)
+                            ItemRowView(project: project, item: item)
                         }
                         .onDelete { offsets in
                             // allItems will hold all items even if we delete items from Core Data
