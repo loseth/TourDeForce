@@ -7,7 +7,7 @@
 
 import Foundation
 
-// Alternatives to using enums for sorting: KeyPaths/PartialKeyPaths or NSSortDescriptor
+// Alternatives to using enum for sorting: NSSortDescriptor and PartialKeyPaths
 // Will not be used, not a good idea in this project!
 extension Sequence {
     
