@@ -43,7 +43,7 @@ struct ProjectsView: View {
                                 }
                                 .onDelete { offsets in
                                     // allItems will hold all items even if we delete items from Core Data
-                                    let allItems = project.projectItems
+                                    let allItems = project.projectItems(using: sortOrder)
                                     
                                     for offset in offsets {
                                         let item = allItems[offset]
