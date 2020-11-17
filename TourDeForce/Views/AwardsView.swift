@@ -11,6 +11,8 @@ struct AwardsView: View {
     static let tag: String? = "Awards"
     
     @EnvironmentObject var dataController: DataController
+    @State private var selectedAward = Award.example
+    @State private var showingAwardsDetails = false
     
     var columns: [GridItem] {
         [GridItem(.adaptive(minimum: 100, maximum: 100))]
@@ -22,7 +24,8 @@ struct AwardsView: View {
                 LazyVGrid(columns: columns) {
                     ForEach(Award.allAwards) { award in
                         Button {
-                            // action here
+                            selectedAward = award
+                            showingAwardsDetails = true
                         } label: {
                             Image(systemName: award.image)
                                 .resizable()
@@ -35,6 +38,13 @@ struct AwardsView: View {
                 }
             }
             .navigationTitle("Awards")
+        }
+        .alert(isPresented: $showingAwardsDetails) {
+            if dataController.hasEarned(award: selectedAward) {
+                return Alert(title: Text("Unlocked: \(selectedAward.name)"), message: Text(selectedAward.description), dismissButton: .default(Text("OK")))
+            } else {
+                return Alert(title: Text("Locked"), message: Text(selectedAward.description), dismissButton: .default(Text("OK")))
+            }
         }
     }
 }
