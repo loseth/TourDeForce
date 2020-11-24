@@ -25,6 +25,7 @@
 		1B548DE3255A4CD900153151 /* SelectSomethingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B548DE2255A4CD900153151 /* SelectSomethingView.swift */; };
 		1BB57F0E255F897300F64A4D /* AwardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB57F0D255F897300F64A4D /* AwardsView.swift */; };
 		1BBABB422556A9B700874075 /* Sequence-Sorting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BBABB412556A9B700874075 /* Sequence-Sorting.swift */; };
+		1BDD1D44256CCCE20064055C /* Color-Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BDD1D43256CCCE20064055C /* Color-Additions.swift */; };
 		1BF229EF25481BDF00051A4A /* TourDeForceApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF229EE25481BDF00051A4A /* TourDeForceApp.swift */; };
 		1BF229F325481BE700051A4A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BF229F225481BE700051A4A /* Assets.xcassets */; };
 		1BF229F625481BE700051A4A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BF229F525481BE700051A4A /* Preview Assets.xcassets */; };
@@ -50,6 +51,7 @@
 		1B548DE2255A4CD900153151 /* SelectSomethingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectSomethingView.swift; sourceTree = "<group>"; };
 		1BB57F0D255F897300F64A4D /* AwardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AwardsView.swift; sourceTree = "<group>"; };
 		1BBABB412556A9B700874075 /* Sequence-Sorting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sequence-Sorting.swift"; sourceTree = "<group>"; };
+		1BDD1D43256CCCE20064055C /* Color-Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color-Additions.swift"; sourceTree = "<group>"; };
 		1BF229EB25481BDF00051A4A /* TourDeForce.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TourDeForce.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BF229EE25481BDF00051A4A /* TourDeForceApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TourDeForceApp.swift; sourceTree = "<group>"; };
 		1BF229F225481BE700051A4A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -74,6 +76,7 @@
 			children = (
 				1B0A1FDE25483D28006D0605 /* Binding-OnChange.swift */,
 				1B17B8A7255F796900211431 /* Bundle-Decodable.swift */,
+				1BDD1D43256CCCE20064055C /* Color-Additions.swift */,
 				1BBABB412556A9B700874075 /* Sequence-Sorting.swift */,
 			);
 			path = Extensions;
@@ -239,6 +242,7 @@
 				1BB57F0E255F897300F64A4D /* AwardsView.swift in Sources */,
 				1BF22A012548227A00051A4A /* Main.xcdatamodeld in Sources */,
 				1B35219D25482BA80056294D /* ContentView.swift in Sources */,
+				1BDD1D44256CCCE20064055C /* Color-Additions.swift in Sources */,
 				1B0A2015254C0DDB006D0605 /* EditProjectView.swift in Sources */,
 				1B352199254829B50056294D /* Project-CoreDataHelpers.swift in Sources */,
 				1B548DE3255A4CD900153151 /* SelectSomethingView.swift in Sources */,
