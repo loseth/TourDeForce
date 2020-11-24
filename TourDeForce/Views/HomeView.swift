@@ -15,13 +15,10 @@ struct HomeView: View {
     
     var body: some View {
         NavigationView {
-            VStack {
-                Button("Add Data") {
-                    dataController.deleteAll()
-                    dataController.save()
-                    try? dataController.createSampleData()
-                }
+            ScrollView {
+                
             }
+            .background(Color.systemGroupedBackground.ignoresSafeArea())
             .navigationTitle("Home")
         }
     }
@@ -32,3 +29,15 @@ struct HomeView_Previews: PreviewProvider {
         HomeView()
     }
 }
+
+
+
+
+//VStack {
+//    Button("Add Data") {
+//        dataController.deleteAll()
+//        dataController.save()
+//        try? dataController.createSampleData()
+//    }
+//}
+//.navigationTitle("Home")
