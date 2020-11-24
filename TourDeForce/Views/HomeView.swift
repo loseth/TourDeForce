@@ -18,6 +18,10 @@ struct HomeView: View {
     
     let items: FetchRequest<Item>
     
+    var projectRows: [GridItem] {
+        [GridItem(.fixed(100))]
+    }
+    
     init() {
         let request: NSFetchRequest<Item> = Item.fetchRequest()
         
@@ -32,7 +36,28 @@ struct HomeView: View {
     var body: some View {
         NavigationView {
             ScrollView {
-                
+                VStack(alignment: .leading) {
+                    ScrollView(.horizontal, showsIndicators: false) {
+                        LazyHGrid(rows: projectRows) {
+                            ForEach(projects) { project in
+                                VStack(alignment: .leading) {
+                                    Text("\(project.projectItems.count) items")
+                                        .font(.caption)
+                                        .foregroundColor(.secondary)
+                                    Text(project.projectTitle)
+                                        .font(.title2)
+                                    ProgressView(value: project.completionAmount)
+                                        .accentColor(Color(project.projectColor))
+                                }
+                                .padding()
+                                .background(Color.secondarySystemGroupedBackground)
+                                .cornerRadius(10)
+                                .shadow(color: Color.black.opacity(0.2), radius: 5)
+                            }
+                        }
+                        .padding([.horizontal, .top])
+                    }
+                }
             }
             .background(Color.systemGroupedBackground.ignoresSafeArea())
             .navigationTitle("Home")
