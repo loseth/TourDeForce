@@ -9,7 +9,7 @@
     },
     {
         "name": "A Great Start",
-        "description": "Add 10 item.",
+        "description": "Add 10 items.",
         "color": "Light Blue",
         "criterion": "items",
         "value": 10,
