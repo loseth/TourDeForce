@@ -86,7 +86,16 @@ struct ProjectsView: View {
                                 dataController.save()
                             }
                         } label: {
-                            Label("Add Project", systemImage: "plus")
+                            //MARK: - iOS accessibility bug with the + sign for adding projects
+                            //TODO: Remove this hack when iOS fixed
+                            if UIAccessibility.isVoiceOverRunning {
+                                Text("Add Project")
+                            } else {
+                                Label("Add Project", systemImage: "plus")
+                            }
+                            
+                            // Revert to this again when fixed
+//                            Label("Add Project", systemImage: "plus")
                         }
                     }
                 }

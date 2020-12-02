@@ -28,7 +28,7 @@
 /* HOME VIEW */
 "Up next" = "Következő";
 "More to explore" = "Felfedezendő dolgok";
-
+"%@, %lld items, %g%% complete." = "%@, %lld tétel, %g%% kész.";
 
 
 /* PROJECTS VIEW */
@@ -50,6 +50,9 @@
 "New Project" = "Új projekt";
 "New Item" = "Új tétel";
 
+/* Completion and priority status for an item */
+"%@, completed." = "%@, elkészült.";
+"%@, high priority." = "%@, elsőbbségi.";
 
 
 /* EDITING PROJECTS */
@@ -66,6 +69,19 @@
 "Delete project?" = "Projekt törlése?";
 "Are you sure you want to delete this project? You will also delete all the items it contains." = "Biztosan törli a projektet? Az összes elem törlődni fog.";
 
+"Select a color" = "Válassza ki a színt";
+"Pink" = "Rózsaszín";
+"Purple" = "Lila";
+"Red" = "Piros";
+"Orange" = "Narancs sárga";
+"Gold" = "Arany";
+"Green" = "Zöld";
+"Teal" = "Zöldeskék";
+"Light Blue" = "Világos kék";
+"Dark Blue" = "Sötét kék";
+"Midnight" = "Éjfél";
+"Dark Gray" = "Sötét szürke";
+"Gray" = "Szürke";
 
 
 /* EDITING ITEMS */
