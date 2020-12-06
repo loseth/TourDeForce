@@ -42,18 +42,7 @@ struct ProjectsView: View {
                                     ItemRowView(project: project, item: item)
                                 }
                                 .onDelete { offsets in
-                                    // allItems will hold all items even if we delete items from Core Data
-                                    let allItems = project.projectItems(using: sortOrder)
-                                    
-                                    for offset in offsets {
-                                        let item = allItems[offset]
-                                        // This will hold on to items and delete all at the end of the run loop
-                                        dataController.delete(item)
-                                    }
-                                    
-                                    // This however will delete all pending items immediately
-                                    // dataController.container.viewContext.processPendingChanges()
-                                    dataController.save()
+                                    delete(offsets, from: project)
                                 }
                                 
                                 if showClosedProjects == false {
@@ -122,6 +111,21 @@ struct ProjectsView: View {
             item.creationDate = Date()
             dataController.save()
         }
+    }
+    
+    func delete(_ offsets: IndexSet, from project: Project) {
+        // allItems will hold all items even if we delete items from Core Data
+        let allItems = project.projectItems(using: sortOrder)
+        
+        for offset in offsets {
+            let item = allItems[offset]
+            // This will hold on to items and delete all at the end of the run loop
+            dataController.delete(item)
+        }
+        
+        // This however will delete all pending items immediately
+        // dataController.container.viewContext.processPendingChanges()
+        dataController.save()
     }
 }
 
