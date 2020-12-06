@@ -28,6 +28,30 @@ struct ProjectsView: View {
         ], predicate: NSPredicate(format: "closed = %d", showClosedProjects))
     }
     
+    var projectsList: some View {
+        List {
+            ForEach(projects.wrappedValue) { project in
+                Section(header: ProjectHeaderView(project: project)) {
+                    ForEach(project.projectItems(using: sortOrder)) { item in
+                        ItemRowView(project: project, item: item)
+                    }
+                    .onDelete { offsets in
+                        delete(offsets, from: project)
+                    }
+                    
+                    if showClosedProjects == false {
+                        Button {
+                            addItem(to: project)
+                        } label: {
+                            Label("Add New Item", systemImage: "plus")
+                        }
+                    }
+                }
+            }
+        }
+        .listStyle(InsetGroupedListStyle())
+    }
+    
     var body: some View {
         NavigationView {
             Group {
@@ -35,27 +59,7 @@ struct ProjectsView: View {
                     Text("There's nothing here right now")
                         .foregroundColor(.secondary)
                 } else {
-                    List {
-                        ForEach(projects.wrappedValue) { project in
-                            Section(header: ProjectHeaderView(project: project)) {
-                                ForEach(project.projectItems(using: sortOrder)) { item in
-                                    ItemRowView(project: project, item: item)
-                                }
-                                .onDelete { offsets in
-                                    delete(offsets, from: project)
-                                }
-                                
-                                if showClosedProjects == false {
-                                    Button {
-                                        addItem(to: project)
-                                    } label: {
-                                        Label("Add New Item", systemImage: "plus")
-                                    }
-                                }
-                            }
-                        }
-                    }
-                    .listStyle(InsetGroupedListStyle())
+                    projectsList
                 }
             }
             .navigationTitle(showClosedProjects ? "Closed Projects" : "Open Projects")
