@@ -52,6 +52,26 @@ struct ProjectsView: View {
         .listStyle(InsetGroupedListStyle())
     }
     
+    var addProjectToolbarItem: some ToolbarContent {
+        ToolbarItem(placement: .navigationBarTrailing) {
+            if showClosedProjects == false {
+                Button(action: addProject) {
+
+                    //MARK: - iOS accessibility bug with the + sign for adding projects
+                    //TODO: Remove this hack when iOS fixed
+                    if UIAccessibility.isVoiceOverRunning {
+                        Text("Add Project")
+                    } else {
+                        Label("Add Project", systemImage: "plus")
+                    }
+                    
+                    // Revert to this again when fixed
+//                            Label("Add Project", systemImage: "plus")
+                }
+            }
+        }
+    }
+    
     var body: some View {
         NavigationView {
             Group {
@@ -64,23 +84,7 @@ struct ProjectsView: View {
             }
             .navigationTitle(showClosedProjects ? "Closed Projects" : "Open Projects")
             .toolbar {
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    if showClosedProjects == false {
-                        Button(action: addProject) {
-    
-                            //MARK: - iOS accessibility bug with the + sign for adding projects
-                            //TODO: Remove this hack when iOS fixed
-                            if UIAccessibility.isVoiceOverRunning {
-                                Text("Add Project")
-                            } else {
-                                Label("Add Project", systemImage: "plus")
-                            }
-                            
-                            // Revert to this again when fixed
-//                            Label("Add Project", systemImage: "plus")
-                        }
-                    }
-                }
+                addProjectToolbarItem
                 
                 ToolbarItem(placement: .navigationBarLeading) {
                     Button {
