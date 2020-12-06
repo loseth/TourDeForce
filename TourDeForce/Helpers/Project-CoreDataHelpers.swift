@@ -5,7 +5,7 @@
 //  Created by Tor Rafsol Løseth on 2020-10-24.
 //
 
-import Foundation
+import SwiftUI
 
 extension Project {
     // Colors ordered for most pleasing appearance in color grid
@@ -56,6 +56,10 @@ extension Project {
         
         let completedItems = originalItems.filter(\.completed)
         return Double(completedItems.count) / Double(originalItems.count)
+    }
+    
+    var label: LocalizedStringKey {
+        LocalizedStringKey("\(projectTitle), \(projectItems.count) items, \(completionAmount * 100, specifier: "%g")% complete.")
     }
     
     static var example: Project {

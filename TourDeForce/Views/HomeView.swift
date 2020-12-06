@@ -54,7 +54,7 @@ struct HomeView: View {
                                 .cornerRadius(10)
                                 .shadow(color: Color.black.opacity(0.2), radius: 5)
                                 .accessibilityElement(children: .ignore)
-                                .accessibilityLabel("\(project.projectTitle), \(project.projectItems.count) items, \(project.completionAmount * 100, specifier: "%g")% complete.")
+                                .accessibilityLabel(project.label)
                             }
                         }
                         .padding([.horizontal, .top])
