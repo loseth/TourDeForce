@@ -27,17 +27,7 @@ struct ItemListView: View {
                             .stroke(Color(item.project?.projectColor ?? "Light Blue"), lineWidth: 2)
                             .frame(width: 44, height: 44)
                         
-                        VStack(alignment: .leading) {
-                            Text(item.itemTitle)
-                                .font(.title2)
-                                .foregroundColor(.primary)
-                                .frame(maxWidth: .infinity, alignment: .leading)
-                            
-                            if item.itemDetail.isEmpty == false {
-                                Text(item.itemDetail)
-                                    .foregroundColor(.secondary)
-                            }
-                        }
+                        ItemDetailView(item: item)
                     }
                     .padding()
                     .background(Color.secondarySystemGroupedBackground)
