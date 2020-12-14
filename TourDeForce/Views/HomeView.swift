@@ -25,7 +25,11 @@ struct HomeView: View {
     init() {
         let request: NSFetchRequest<Item> = Item.fetchRequest()
         
-        request.predicate = NSPredicate(format: "completed = false")
+        let completedPredicate = NSPredicate(format: "completed = false")
+        let openPredicate = NSPredicate(format: "project.closed = false")
+        let compoundPredicate = NSCompoundPredicate(type: .and, subpredicates: [completedPredicate, openPredicate])
+        
+        request.predicate = compoundPredicate
         request.sortDescriptors = [NSSortDescriptor(keyPath: \Item.priority, ascending: false)]
         request.fetchLimit = 10
         
@@ -67,11 +71,10 @@ struct HomeView_Previews: PreviewProvider {
 
 
 // Could use this later to add example data
-//VStack {
+//.toolbar {
 //    Button("Add Data") {
 //        dataController.deleteAll()
 //        dataController.save()
 //        try? dataController.createSampleData()
 //    }
 //}
-//.navigationTitle("Home")
