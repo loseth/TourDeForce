@@ -11,23 +11,28 @@ struct ProjectsView: View {
     // Optional because @SceneStorage in ContentView is optional
     static let openTag: String? = "Open"
     static let closedTag: String? = "Closed"
-    
+
     @EnvironmentObject var dataController: DataController
     @Environment(\.managedObjectContext) var managedObjectContext
-    
+
     @State private var showingSortOrder = false
     @State private var sortOrder = Item.SortOrder.optimized
-    
+
     let showClosedProjects: Bool
     let projects: FetchRequest<Project>
-    
+
     init(showClosedProjects: Bool) {
         self.showClosedProjects = showClosedProjects
-        
-        projects = FetchRequest<Project>(entity: Project.entity(), sortDescriptors: [NSSortDescriptor(keyPath: \Project.creationDate, ascending: false)
-        ], predicate: NSPredicate(format: "closed = %d", showClosedProjects))
+
+        projects = FetchRequest<Project>(
+            entity: Project.entity(),
+            sortDescriptors: [NSSortDescriptor(
+                                keyPath: \Project.creationDate,
+                                ascending: false)
+        ],
+            predicate: NSPredicate(format: "closed = %d", showClosedProjects))
     }
-    
+
     var projectsList: some View {
         List {
             ForEach(projects.wrappedValue) { project in
@@ -38,7 +43,7 @@ struct ProjectsView: View {
                     .onDelete { offsets in
                         delete(offsets, from: project)
                     }
-                    
+
                     if showClosedProjects == false {
                         Button {
                             addItem(to: project)
@@ -51,27 +56,28 @@ struct ProjectsView: View {
         }
         .listStyle(InsetGroupedListStyle())
     }
-    
+
     var addProjectToolbarItem: some ToolbarContent {
         ToolbarItem(placement: .navigationBarTrailing) {
             if showClosedProjects == false {
                 Button(action: addProject) {
 
-                    //MARK: - iOS accessibility bug with the + sign for adding projects
-                    //TODO: Remove this hack when iOS fixed
+                    // MARK: - iOS accessibility bug with the + sign for adding projects
+                    // TODO: Remove this hack when iOS fixed
+                    // TRL: 2021-01-19
                     if UIAccessibility.isVoiceOverRunning {
                         Text("Add Project")
                     } else {
                         Label("Add Project", systemImage: "plus")
                     }
-                    
+
                     // Revert to this again when fixed
 //                            Label("Add Project", systemImage: "plus")
                 }
             }
         }
     }
-    
+
     var sortOrderToolbarItem: some ToolbarContent {
         ToolbarItem(placement: .navigationBarLeading) {
             Button {
@@ -81,7 +87,7 @@ struct ProjectsView: View {
             }
         }
     }
-    
+
     var body: some View {
         NavigationView {
             Group {
@@ -104,11 +110,11 @@ struct ProjectsView: View {
                     .default(Text("Title")) { sortOrder = .title }
                 ])
             }
-            
+
             SelectSomethingView()
         }
     }
-    
+
     func addProject() {
         withAnimation {
             let project = Project(context: managedObjectContext)
@@ -117,7 +123,7 @@ struct ProjectsView: View {
             dataController.save()
         }
     }
-    
+
     func addItem(to project: Project) {
         withAnimation {
             let item = Item(context: managedObjectContext)
@@ -126,17 +132,17 @@ struct ProjectsView: View {
             dataController.save()
         }
     }
-    
+
     func delete(_ offsets: IndexSet, from project: Project) {
         // allItems will hold all items even if we delete items from Core Data
         let allItems = project.projectItems(using: sortOrder)
-        
+
         for offset in offsets {
             let item = allItems[offset]
             // This will hold on to items and delete all at the end of the run loop
             dataController.delete(item)
         }
-        
+
         // This however will delete all pending items immediately
         // dataController.container.viewContext.processPendingChanges()
         dataController.save()
@@ -145,7 +151,7 @@ struct ProjectsView: View {
 
 struct ProjectsView_Previews: PreviewProvider {
     static var dataController = DataController.preview
-    
+
     static var previews: some View {
         ProjectsView(showClosedProjects: false)
             .environment(\.managedObjectContext, dataController.container.viewContext)

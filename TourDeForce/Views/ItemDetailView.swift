@@ -9,14 +9,14 @@ import SwiftUI
 
 struct ItemDetailView: View {
     @ObservedObject var item: Item
-    
+
     var body: some View {
         VStack(alignment: .leading) {
             Text(item.itemTitle)
                 .font(.title2)
                 .foregroundColor(.primary)
                 .frame(maxWidth: .infinity, alignment: .leading)
-            
+
             if item.itemDetail.isEmpty == false {
                 Text(item.itemDetail)
                     .foregroundColor(.secondary)
