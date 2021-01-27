@@ -15,6 +15,7 @@
 		1B17B8A8255F796900211431 /* Bundle-Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B17B8A7255F796900211431 /* Bundle-Decodable.swift */; };
 		1B17B8AE255F84A400211431 /* Award.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B17B8AD255F84A400211431 /* Award.swift */; };
 		1B297A4025C17B3C003E8A6A /* TourDeForceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B297A3F25C17B3C003E8A6A /* TourDeForceTests.swift */; };
+		1B297A4A25C17E97003E8A6A /* AssetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B297A4925C17E96003E8A6A /* AssetTests.swift */; };
 		1B31AB642572A9E6003575B0 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1B31AB662572A9E6003575B0 /* Localizable.strings */; };
 		1B31AB682572AAD7003575B0 /* Localizable.stringsdict in Resources */ = {isa = PBXBuildFile; fileRef = 1B31AB6A2572AAD7003575B0 /* Localizable.stringsdict */; };
 		1B31AB6D2572AD1A003575B0 /* Awards.json in Resources */ = {isa = PBXBuildFile; fileRef = 1B31AB6F2572AD1A003575B0 /* Awards.json */; };
@@ -59,6 +60,7 @@
 		1B297A3D25C17B3C003E8A6A /* TourDeForceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TourDeForceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B297A3F25C17B3C003E8A6A /* TourDeForceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TourDeForceTests.swift; sourceTree = "<group>"; };
 		1B297A4125C17B3C003E8A6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1B297A4925C17E96003E8A6A /* AssetTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetTests.swift; sourceTree = "<group>"; };
 		1B31AB652572A9E6003575B0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		1B31AB672572A9F5003575B0 /* hu */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = hu; path = hu.lproj/Localizable.strings; sourceTree = "<group>"; };
 		1B31AB692572AAD7003575B0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; name = en; path = en.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
@@ -184,6 +186,7 @@
 			isa = PBXGroup;
 			children = (
 				1B297A3F25C17B3C003E8A6A /* TourDeForceTests.swift */,
+				1B297A4925C17E96003E8A6A /* AssetTests.swift */,
 				1B297A4125C17B3C003E8A6A /* Info.plist */,
 			);
 			path = TourDeForceTests;
@@ -358,6 +361,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B297A4A25C17E97003E8A6A /* AssetTests.swift in Sources */,
 				1B297A4025C17B3C003E8A6A /* TourDeForceTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
