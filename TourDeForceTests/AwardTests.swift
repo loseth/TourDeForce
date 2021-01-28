@@ -29,11 +29,8 @@ class AwardTests: BaseTestCase {
         let itemsAdded = [1, 10, 20, 50, 100, 250, 500, 1000]
 
         for (index, value) in itemsAdded.enumerated() {
-            var items = [Item]()
-
             for _ in 0..<value {
-                let item = Item(context: managedObjectContext)
-                items.append(item)
+                _ = Item(context: managedObjectContext)
             }
 
             let matches = awards.filter { award in
@@ -42,9 +39,7 @@ class AwardTests: BaseTestCase {
 
             XCTAssertEqual(matches.count, index + 1, "Adding \(value) items should unlock \(index + 1) awards.")
 
-            for item in items {
-                dataController.delete(item)
-            }
+            dataController.deleteAll()
         }
     }
 
@@ -53,12 +48,9 @@ class AwardTests: BaseTestCase {
         let itemsCompleted = [1, 10, 20, 50, 100, 250, 500, 1000]
 
         for (index, value) in itemsCompleted.enumerated() {
-            var items = [Item]()
-
             for _ in 0..<value {
                 let item = Item(context: managedObjectContext)
                 item.completed = true
-                items.append(item)
             }
 
             let matches = awards.filter { award in
@@ -67,9 +59,7 @@ class AwardTests: BaseTestCase {
 
             XCTAssertEqual(matches.count, index + 1, "Completing \(value) items should unlock \(index + 1) awards.")
 
-            for item in items {
-                dataController.delete(item)
-            }
+            dataController.deleteAll()
         }
     }
 }
