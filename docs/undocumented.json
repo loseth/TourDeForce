@@ -1,0 +1,180 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/tor1/Documents/My_Active/My_Projects/TourDeForce/TourDeForce/build/TourDeForce.build/Release-iphoneos/TourDeForce.build/DerivedSources/CoreDataGenerated/Main/Item+CoreDataClass.swift",
+      "line": 14,
+      "symbol": "Item",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tor1/Documents/My_Active/My_Projects/TourDeForce/TourDeForce/build/TourDeForce.build/Release-iphoneos/TourDeForce.build/DerivedSources/CoreDataGenerated/Main/Item+CoreDataClass.swift",
+      "line": 14,
+      "symbol": "Item",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tor1/Documents/My_Active/My_Projects/TourDeForce/TourDeForce/build/TourDeForce.build/Release-iphoneos/TourDeForce.build/DerivedSources/CoreDataGenerated/Main/Item+CoreDataClass.swift",
+      "line": 29,
+      "symbol": "Item",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tor1/Documents/My_Active/My_Projects/TourDeForce/TourDeForce/build/TourDeForce.build/Release-iphoneos/TourDeForce.build/DerivedSources/CoreDataGenerated/Main/Item+CoreDataProperties.swift",
+      "line": 16,
+      "symbol": "Item.fetchRequest()",
+      "symbol_kind": "source.lang.swift.decl.function.method.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tor1/Documents/My_Active/My_Projects/TourDeForce/TourDeForce/build/TourDeForce.build/Release-iphoneos/TourDeForce.build/DerivedSources/CoreDataGenerated/Main/Item+CoreDataProperties.swift",
+      "line": 20,
+      "symbol": "Item.completed",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tor1/Documents/My_Active/My_Projects/TourDeForce/TourDeForce/build/TourDeForce.build/Release-iphoneos/TourDeForce.build/DerivedSources/CoreDataGenerated/Main/Item+CoreDataProperties.swift",
+      "line": 21,
+      "symbol": "Item.creationDate",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tor1/Documents/My_Active/My_Projects/TourDeForce/TourDeForce/build/TourDeForce.build/Release-iphoneos/TourDeForce.build/DerivedSources/CoreDataGenerated/Main/Item+CoreDataProperties.swift",
+      "line": 22,
+      "symbol": "Item.detail",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tor1/Documents/My_Active/My_Projects/TourDeForce/TourDeForce/build/TourDeForce.build/Release-iphoneos/TourDeForce.build/DerivedSources/CoreDataGenerated/Main/Item+CoreDataProperties.swift",
+      "line": 23,
+      "symbol": "Item.priority",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tor1/Documents/My_Active/My_Projects/TourDeForce/TourDeForce/build/TourDeForce.build/Release-iphoneos/TourDeForce.build/DerivedSources/CoreDataGenerated/Main/Item+CoreDataProperties.swift",
+      "line": 24,
+      "symbol": "Item.title",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tor1/Documents/My_Active/My_Projects/TourDeForce/TourDeForce/build/TourDeForce.build/Release-iphoneos/TourDeForce.build/DerivedSources/CoreDataGenerated/Main/Item+CoreDataProperties.swift",
+      "line": 25,
+      "symbol": "Item.project",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tor1/Documents/My_Active/My_Projects/TourDeForce/TourDeForce/build/TourDeForce.build/Release-iphoneos/TourDeForce.build/DerivedSources/CoreDataGenerated/Main/Project+CoreDataClass.swift",
+      "line": 14,
+      "symbol": "Project",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tor1/Documents/My_Active/My_Projects/TourDeForce/TourDeForce/build/TourDeForce.build/Release-iphoneos/TourDeForce.build/DerivedSources/CoreDataGenerated/Main/Project+CoreDataClass.swift",
+      "line": 14,
+      "symbol": "Project",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tor1/Documents/My_Active/My_Projects/TourDeForce/TourDeForce/build/TourDeForce.build/Release-iphoneos/TourDeForce.build/DerivedSources/CoreDataGenerated/Main/Project+CoreDataClass.swift",
+      "line": 30,
+      "symbol": "Project",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tor1/Documents/My_Active/My_Projects/TourDeForce/TourDeForce/build/TourDeForce.build/Release-iphoneos/TourDeForce.build/DerivedSources/CoreDataGenerated/Main/Project+CoreDataClass.swift",
+      "line": 46,
+      "symbol": "Project",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tor1/Documents/My_Active/My_Projects/TourDeForce/TourDeForce/build/TourDeForce.build/Release-iphoneos/TourDeForce.build/DerivedSources/CoreDataGenerated/Main/Project+CoreDataProperties.swift",
+      "line": 16,
+      "symbol": "Project.fetchRequest()",
+      "symbol_kind": "source.lang.swift.decl.function.method.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tor1/Documents/My_Active/My_Projects/TourDeForce/TourDeForce/build/TourDeForce.build/Release-iphoneos/TourDeForce.build/DerivedSources/CoreDataGenerated/Main/Project+CoreDataProperties.swift",
+      "line": 20,
+      "symbol": "Project.closed",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tor1/Documents/My_Active/My_Projects/TourDeForce/TourDeForce/build/TourDeForce.build/Release-iphoneos/TourDeForce.build/DerivedSources/CoreDataGenerated/Main/Project+CoreDataProperties.swift",
+      "line": 21,
+      "symbol": "Project.color",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tor1/Documents/My_Active/My_Projects/TourDeForce/TourDeForce/build/TourDeForce.build/Release-iphoneos/TourDeForce.build/DerivedSources/CoreDataGenerated/Main/Project+CoreDataProperties.swift",
+      "line": 22,
+      "symbol": "Project.creationDate",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tor1/Documents/My_Active/My_Projects/TourDeForce/TourDeForce/build/TourDeForce.build/Release-iphoneos/TourDeForce.build/DerivedSources/CoreDataGenerated/Main/Project+CoreDataProperties.swift",
+      "line": 23,
+      "symbol": "Project.detail",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tor1/Documents/My_Active/My_Projects/TourDeForce/TourDeForce/build/TourDeForce.build/Release-iphoneos/TourDeForce.build/DerivedSources/CoreDataGenerated/Main/Project+CoreDataProperties.swift",
+      "line": 24,
+      "symbol": "Project.title",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tor1/Documents/My_Active/My_Projects/TourDeForce/TourDeForce/build/TourDeForce.build/Release-iphoneos/TourDeForce.build/DerivedSources/CoreDataGenerated/Main/Project+CoreDataProperties.swift",
+      "line": 25,
+      "symbol": "Project.items",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tor1/Documents/My_Active/My_Projects/TourDeForce/TourDeForce/build/TourDeForce.build/Release-iphoneos/TourDeForce.build/DerivedSources/CoreDataGenerated/Main/Project+CoreDataProperties.swift",
+      "line": 33,
+      "symbol": "Project.addToItems(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tor1/Documents/My_Active/My_Projects/TourDeForce/TourDeForce/build/TourDeForce.build/Release-iphoneos/TourDeForce.build/DerivedSources/CoreDataGenerated/Main/Project+CoreDataProperties.swift",
+      "line": 36,
+      "symbol": "Project.removeFromItems(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tor1/Documents/My_Active/My_Projects/TourDeForce/TourDeForce/build/TourDeForce.build/Release-iphoneos/TourDeForce.build/DerivedSources/CoreDataGenerated/Main/Project+CoreDataProperties.swift",
+      "line": 39,
+      "symbol": "Project.addToItems(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tor1/Documents/My_Active/My_Projects/TourDeForce/TourDeForce/build/TourDeForce.build/Release-iphoneos/TourDeForce.build/DerivedSources/CoreDataGenerated/Main/Project+CoreDataProperties.swift",
+      "line": 42,
+      "symbol": "Project.removeFromItems(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/tor1/Documents/My_Active/My_Projects/TourDeForce/TourDeForce"
+}
