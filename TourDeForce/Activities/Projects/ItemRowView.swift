@@ -11,7 +11,7 @@ struct ItemRowView: View {
     @ObservedObject var project: Project
     @ObservedObject var item: Item
 
-    // a computed propery was chosen instead of a function
+    // a computed property was chosen instead of a function
     var icon: some View {
         if item.completed {
             return Image(systemName: "checkmark.circle")
@@ -25,7 +25,7 @@ struct ItemRowView: View {
         }
     }
 
-    // For accessability to item priorities
+    // For accessibility to item priorities
     var label: Text {
         if item.completed {
             return Text("\(item.itemTitle), completed.")
