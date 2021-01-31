@@ -17,32 +17,46 @@ It uses [Gamification](https://en.wikipedia.org/wiki/Gamification) through award
 
 <p align="center">
     <img src="https://www.infovital.no/tourdeforce/promo.png" alt="TourDeForce logo" width="800" maxHeight="171" />
+    (Temporary design)
 </p>
 
 ## Authors and acknowledgment
 The app is based on the **Ultimate Portfolio App** course from [Paul Hudson (@twostraws)](https://twitter.com/twostraws) at [Hacking with Swift](https://www.hackingwithswift.com/).  
-I would like to thank Paul for not only guiding me through his part of the code, but also for the amazing contributions (in both scope an clarity) that he has made to the Swift community.
+I would like to thank Paul for not only guiding us through his part of the code, but also for the amazing contributions (in both scope an clarity) that he has made to the Swift community.
 
-All other code is written by the maintainer of this repository, [Tor Rafsol Løseth (@loseth) / Twitter](https://twitter.com/loseth).
+All other code is written by the maintainer of this repository, [Tor Rafsol Løseth (@loseth)](https://twitter.com/loseth).
 
 ## Project status
 Not ready for deployment. More to do:
 
-- Multiplatform (iOS, macOS, watchOS)
-- New visual design, including awards symbols
-- Make awards more valuable
 - Documentation and testing
-- Localization (French, German and Norwegian at least)
+- Localization (English and Hungarian done, add French, German and Norwegian + ?)
+- Multiplatform (iOS, iPadOS, macOS, watchOS)
+- New visual design, including awards symbols
+	- Make awards more valuable
+- Settle on business model, if any	
 
 ## Knowledge applied
 
 ### Technologies
 
-- iOS (macOS and watchOS will follow)
-- Swift and SwiftUI
+- [iOS](https://developer.apple.com/ios/) ([iPadOS](https://developer.apple.com/ipados/), [macOS](https://developer.apple.com/macos/) and [watchOS](https://developer.apple.com/watchos/) will follow)
+- [Foundation](https://developer.apple.com/documentation/foundation), [Swift](https://developer.apple.com/documentation/swift/) and [SwiftUI](https://developer.apple.com/documentation/swiftui).
+
+### Concepts
+
+- **Accessibility** with [VoiceOver](https://www.apple.com/accessibility/vision/).
+- **Architecture navigation** with [TabView and NavigationView/NavigationLink](https://developer.apple.com/documentation/swiftui/view-layout-and-presentation).
+- **Archiving objects** with [Codable](https://developer.apple.com/documentation/swift/codable) and [JSONDecoder](https://developer.apple.com/documentation/foundation/jsondecoder)
+- **Filter and sort objects** with [NSCompundPredicate, NSPredicate, NSSortDescriptor](https://developer.apple.com/documentation/foundation/filters_and_sorting).
+- **Internationalization (i18n) and Localization (i10n)** with [LocalizedStringKey](https://developer.apple.com/documentation/xcode/localization).
+- **Persistent storage** with [Core Data](https://developer.apple.com/documentation/coredata)
+- **SwiftUI data flow and state** with [@Environment, @EnvironmentObject, @Fetchrequest, @ObservedObject, @SceneStorage, @State, @StateObject, and ObservableObject.](https://developer.apple.com/documentation/swiftui/state-and-data-flow)
+- **Unit testing** with [XCTest](https://developer.apple.com/documentation/xctest).
 
 ### Tools
 
+- **Image editing** with [Acorn](https://flyingmeat.com/acorn/)
 - **Integrated development environment** with [Xcode](https://developer.apple.com/xcode/)
 - **Markdown viewing** with [Marked](https://marked2app.com/)
 - **Project documentation** with [Jazzy](https://github.com/realm/jazzy)
@@ -51,119 +65,13 @@ Not ready for deployment. More to do:
 - **Text processing** with [BBEdit](https://www.barebones.com/products/bbedit/)
 - **Version control** with [Git](https://git-scm.com/)
 
-### Concepts
-
-- **Accessibility** with [VoiceOver](https://www.apple.com/accessibility/vision/).
-- **Architecture navigation** with TabView and NavigationView/NavigationLink.
-- **Archiving objects** with [Codable](https://developer.apple.com/documentation/swift/codable) and [JSONDecoder](https://developer.apple.com/documentation/foundation/jsondecoder)
-- **Filter and sort objects** with NSCompundPredicate, NSPredicate, NSSortDescriptor.
-- **Localization** (English and Hungarian so far) with LocalizedStringKey.
-- **Persistent storage** with [Core Data](https://developer.apple.com/documentation/coredata)
-- **SwiftUI data flow and state** with [@Environment, @EnvironmentObject, @Fetchrequest, @ObservedObject, @SceneStorage, @State, @StateObject, and ObservableObject.](https://developer.apple.com/documentation/swiftui/state-and-data-flow)
-- **Unit testing** with [XCTest](https://developer.apple.com/documentation/xctest).
-
 ## Contributing
 Currently not open for contributions.
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
 
-<!--
-- **App Architecture**
-    - Launching
-    - Onboarding
-    - Loading
-    - Modality
-        - Fullscreen
-        - Sheet
-    - Navigation
-        - Content/Experience-Driven
-        - Flat
-        - Hierarchical
-    - Requesting Permission
-    - Settings
-- **User Interaction**
-    - 3D Touch
-    - Apple Pencil and Scribble
-    - Audio
-    - Authentication
-    - Data Entry
-    - Drag and Drop
-    - Feedback
-    - File Handling
-    - Game Controllers
-    - Gestures
-    - Haptics
-    - Near Field Communication
-    - Pointers (iPadOS)
-    - Undo and Redo
-- **System Capabilities**
-    - Augmented Reality
-    - Home Screen Actions
-    - Multitasking
-    - Multiple Windows
-    - Notifications
-    - Printing
-    - Quick Look
-    - Ratings and Reviews
-    - Screenshots
-    - TV Providers
-    - Widgets
-- **Visual Design**
-    - Adaptivity and Layout
-    - Animation
-    - Branding
-    - Color
-    - Dark Mode
-    - Launch Screen
-    - Materials
-    - Terminology
-    - Typography
-    - Video
-- **Icons and Images**
-    - Image Size and Resolution
-    - App Icon
-    - Custom Icons
-    - System Icons
-- **Bars**
-    - Navigation
-    - Search
-    - Sidebar
-    - Status
-    - Tab
-    - Toolbar
-- **Views**
-    - Action
-    - Activity/Share
-    - Alert
-    - Collection
-    - Image
-    - Page
-    - Popover
-    - Scroll
-    - Split
-    - Table
-    - Text
-    - Web
-- **Controls**
-    - Button
-    - Color Well
-    - Context Menu
-    - Edit Menu
-    - Label
-    - Page
-    - Picker
-    - Progress Indicator
-    - Pull-Down Menu
-    - Refresh Content
-    - Segmented
-    - Slider
-    - Stepper
-    - Switch
-    - Text Field
-- **Application Navigation**
-    - SwiftUI
-        - NavigationView :white_check_mark:
-        - TabView :white_check_mark:
-- Design Patterns
--->
+**Please note**:  
+The license applies to the code, but it does not extend to the use of the name or the visual design of the app (custom logos, icons and symbols.)  
+
+Foundation, Swift, SwiftUI, the Swift logo, iOS, iPadOS, macOS, watchOS, are trademarks of Apple Inc., registered in the U.S. and other countries - they have their own licenses.
