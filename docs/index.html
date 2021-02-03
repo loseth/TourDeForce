@@ -51,128 +51,95 @@
         <section>
           <section class="section">
             
-            <h1 id='tourdeforce' class='heading'>TourDeForce</h1>
+            <p align="center">
+    <img src="https://www.infovital.no/tourdeforce/logo.png" alt="TourDeForce logo" width="614" maxHeight="171" />
+</p>
 
 <p align="center">
     <img src="https://img.shields.io/badge/iOS-14.0+-blue.svg" />
     <img src="https://img.shields.io/badge/Swift-5.0-brightgreen.svg" />
-    <a href="https://twitter.com/twostraws">
-        <img src="https://img.shields.io/badge/Contact-@twostraws-lightgrey.svg?style=flat" alt="Twitter: @loseth" />
+    <a href="https://twitter.com/loseth">
+        <img src="https://img.shields.io/badge/Contact-@loseth-lightgrey.svg?style=flat" alt="Twitter: @loseth" />
     </a>
 </p>
 
-<p><strong>TourDeForce</strong> is a To-do list app that builds it&rsquo;s foundations from the <strong>Ultimate Portfolio App</strong> course from <a href="https://twitter.com/twostraws">Paul Hudson (@twostraws)</a> at <a href="https://www.hackingwithswift.com/">Hacking with Swift</a>.  </p>
+<p><strong>TourDeForce</strong> is a portfolio to-do list app.
+It uses <a href="https://en.wikipedia.org/wiki/Gamification">Gamification</a> through awards, to make completion of projects and their items more compelling. </p>
 
-<p>It showcases technologies I&rsquo;ve used while building the app, and will be used as starting point for later applications.<br>
-List of technologies will be added below in due time.</p>
+<p><br></p>
 
-<p>Built in <strong>SwiftUI</strong> but will include <strong>UIKit</strong> components, and it will be <strong>multiplatform</strong> (iOS, macOS, and watchOS) as well.  </p>
+<p align="center">
+    <img src="https://www.infovital.no/tourdeforce/promo.png" alt="TourDeForce logo" width="800" maxHeight="171" />
+    (Temporary design)
+</p>
+<h2 id='authors-and-acknowledgment' class='heading'>Authors and acknowledgment</h2>
 
-<!--
+<p>The app is based on the <strong>Ultimate Portfolio App</strong> course from <a href="https://twitter.com/twostraws">Paul Hudson (@twostraws)</a> at <a href="https://www.hackingwithswift.com/">Hacking with Swift</a>.<br>
+I would like to thank Paul for not only guiding us through his part of the code, but also for the amazing contributions (in both scope an clarity) that he has made to the Swift community.</p>
 
-- **App Architecture**
-    - Launching
-    - Onboarding
-    - Loading
-    - Modality
-        - Fullscreen
-        - Sheet
-    - Navigation
-        - Content/Experience-Driven
-        - Flat
-        - Hierarchical
-    - Requesting Permission
-    - Settings
-- **User Interaction**
-    - 3D Touch
-    - Apple Pencil and Scribble
-    - Audio
-    - Authentication
-    - Data Entry
-    - Drag and Drop
-    - Feedback
-    - File Handling
-    - Game Controllers
-    - Gestures
-    - Haptics
-    - Near Field Communication
-    - Pointers (iPadOS)
-    - Undo and Redo
-- **System Capabilities**
-    - Augmented Reality
-    - Home Screen Actions
-    - Multitasking
-    - Multiple Windows
-    - Notifications
-    - Printing
-    - Quick Look
-    - Ratings and Reviews
-    - Screenshots
-    - TV Providers
-    - Widgets
-- **Visual Design**
-    - Adaptivity and Layout
-    - Animation
-    - Branding
-    - Color
-    - Dark Mode
-    - Launch Screen
-    - Materials
-    - Terminology
-    - Typography
-    - Video
-- **Icons and Images**
-    - Image Size and Resolution
-    - App Icon
-    - Custom Icons
-    - System Icons
-- **Bars**
-    - Navigation
-    - Search
-    - Sidebar
-    - Status
-    - Tab
-    - Toolbar
-- **Views**
-    - Action
-    - Activity/Share
-    - Alert
-    - Collection
-    - Image
-    - Page
-    - Popover
-    - Scroll
-    - Split
-    - Table
-    - Text
-    - Web
-- **Controls**
-    - Button
-    - Color Well
-    - Context Menu
-    - Edit Menu
-    - Label
-    - Page
-    - Picker
-    - Progress Indicator
-    - Pull-Down Menu
-    - Refresh Content
-    - Segmented
-    - Slider
-    - Stepper
-    - Switch
-    - Text Field
-- **Application Navigation**
-    - SwiftUI
-        - NavigationView :white_check_mark:
-        - TabView :white_check_mark:
-- Design Patterns
--->
+<p>All other code is written by the maintainer of this repository, <a href="https://twitter.com/loseth">Tor Rafsol Løseth (@loseth)</a>.</p>
+<h2 id='project-status' class='heading'>Project status</h2>
+
+<p>Not ready for deployment. More to do:</p>
+
+<ul>
+<li>Documentation and testing</li>
+<li>Localization (English and Hungarian done, add French, German and Norwegian + ?)</li>
+<li>Multiplatform (iOS, iPadOS, macOS, watchOS)</li>
+<li>New visual design, including awards symbols
+
+<ul>
+<li>Make awards more valuable</li>
+</ul></li>
+<li>Settle on business model, if any<br></li>
+</ul>
+<h2 id='knowledge-applied' class='heading'>Knowledge applied</h2>
+<h3 id='technologies' class='heading'>Technologies</h3>
+
+<ul>
+<li><a href="https://developer.apple.com/ios/">iOS</a> (<a href="https://developer.apple.com/ipados/">iPadOS</a>, <a href="https://developer.apple.com/macos/">macOS</a> and <a href="https://developer.apple.com/watchos/">watchOS</a> will follow)</li>
+<li><a href="https://developer.apple.com/documentation/foundation">Foundation</a>, <a href="https://developer.apple.com/documentation/swift/">Swift</a> and <a href="https://developer.apple.com/documentation/swiftui">SwiftUI</a>.</li>
+</ul>
+<h3 id='concepts' class='heading'>Concepts</h3>
+
+<ul>
+<li><strong>Accessibility</strong> with <a href="https://www.apple.com/accessibility/vision/">VoiceOver</a>.</li>
+<li><strong>Architecture navigation</strong> with <a href="https://developer.apple.com/documentation/swiftui/view-layout-and-presentation">TabView and NavigationView/NavigationLink</a>.</li>
+<li><strong>Archiving objects</strong> with <a href="https://developer.apple.com/documentation/swift/codable">Codable</a> and <a href="https://developer.apple.com/documentation/foundation/jsondecoder">JSONDecoder</a></li>
+<li><strong>Filter and sort objects</strong> with <a href="https://developer.apple.com/documentation/foundation/filters_and_sorting">NSCompundPredicate, NSPredicate, NSSortDescriptor</a>.</li>
+<li><strong>Internationalization (i18n) and Localization (i10n)</strong> with <a href="https://developer.apple.com/documentation/xcode/localization">LocalizedStringKey</a>.</li>
+<li><strong>Persistent storage</strong> with <a href="https://developer.apple.com/documentation/coredata">Core Data</a></li>
+<li><strong>SwiftUI data flow and state</strong> with <a href="https://developer.apple.com/documentation/swiftui/state-and-data-flow">@Environment, @EnvironmentObject, @Fetchrequest, @ObservedObject, @SceneStorage, @State, @StateObject, and ObservableObject.</a></li>
+<li><strong>Unit testing</strong> with <a href="https://developer.apple.com/documentation/xctest">XCTest</a>.</li>
+</ul>
+<h3 id='tools' class='heading'>Tools</h3>
+
+<ul>
+<li><strong>Image editing</strong> with <a href="https://flyingmeat.com/acorn/">Acorn</a></li>
+<li><strong>Integrated development environment</strong> with <a href="https://developer.apple.com/xcode/">Xcode</a></li>
+<li><strong>Markdown viewing</strong> with <a href="https://marked2app.com/">Marked</a></li>
+<li><strong>Project documentation</strong> with <a href="https://github.com/realm/jazzy">Jazzy</a></li>
+<li><strong>Screenshots</strong> with <a href="https://github.com/twostraws/ControlRoom">ControlRoom</a></li>
+<li><strong>Swift style</strong> with <a href="https://github.com/realm/SwiftLint">SwiftLint</a></li>
+<li><strong>Text processing</strong> with <a href="https://www.barebones.com/products/bbedit/">BBEdit</a></li>
+<li><strong>Version control</strong> with <a href="https://git-scm.com/">Git</a></li>
+</ul>
+<h2 id='contributing' class='heading'>Contributing</h2>
+
+<p>Currently not open for contributions.</p>
+<h2 id='license' class='heading'>License</h2>
+
+<p><a href="https://choosealicense.com/licenses/mit/">MIT</a></p>
+
+<p><strong>Please note</strong>:<br>
+The license applies to the code, but it does not extend to the use of the name or the visual design of the app (custom logos, icons and symbols.)  </p>
+
+<p>Foundation, Swift, SwiftUI, the Swift logo, iOS, iPadOS, macOS, watchOS, are trademarks of Apple Inc., registered in the U.S. and other countries - they have their own licenses.</p>
 
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2021 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2021-01-28)</p>
+          <p>&copy; 2021 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2021-02-03)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>
