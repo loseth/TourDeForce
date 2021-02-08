@@ -8,8 +8,10 @@
 import CoreData
 import SwiftUI
 
+/// Displays a horizontal scrollview of summary of projects, and a vertical scrollview of
+/// items sorted by priority first then lexical.
 struct HomeView: View {
-    // Optional becuase @SceneStorage in ContentView is optional
+    // Optional because @SceneStorage in ContentView is optional
     static let tag: String? = "Home"
 
     @EnvironmentObject var dataController: DataController
@@ -26,9 +28,8 @@ struct HomeView: View {
         [GridItem(.fixed(100))]
     }
 
+    /// Construct a fetch request to show the 10 highest-priority, incomplete items from open projects.
     init() {
-        // Construct a fetch request to show the 10 highest-priority,
-        // incomplete items from open projects.
         let request: NSFetchRequest<Item> = Item.fetchRequest()
 
         let completedPredicate = NSPredicate(format: "completed = false")
