@@ -49,6 +49,16 @@
                ReferencedContainer = "container:TourDeForce.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "1B52DC4D25D55C2F00ED1B5E"
+               BuildableName = "PerformanceTests.xctest"
+               BlueprintName = "PerformanceTests"
+               ReferencedContainer = "container:TourDeForce.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction
