@@ -38,6 +38,7 @@
 		1B9F6E2025C2A577008F7393 /* ProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9F6E1F25C2A577008F7393 /* ProjectTests.swift */; };
 		1B9F6E2425C2B025008F7393 /* AwardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9F6E2325C2B025008F7393 /* AwardTests.swift */; };
 		1B9F6E2825C2BDAC008F7393 /* DevelopmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9F6E2725C2BDAC008F7393 /* DevelopmentTests.swift */; };
+		1BAD06F025DFBB2E00D27EE1 /* TourDeForceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BAD06EF25DFBB2E00D27EE1 /* TourDeForceUITests.swift */; };
 		1BB57F0E255F897300F64A4D /* AwardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB57F0D255F897300F64A4D /* AwardsView.swift */; };
 		1BBABB422556A9B700874075 /* Sequence-Sorting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BBABB412556A9B700874075 /* Sequence-Sorting.swift */; };
 		1BDD1D44256CCCE20064055C /* Color-Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BDD1D43256CCCE20064055C /* Color-Additions.swift */; };
@@ -56,6 +57,13 @@
 			remoteInfo = TourDeForce;
 		};
 		1B52DC5325D55C2F00ED1B5E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1BF229E325481BDF00051A4A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1BF229EA25481BDF00051A4A;
+			remoteInfo = TourDeForce;
+		};
+		1BAD06F225DFBB2E00D27EE1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 1BF229E325481BDF00051A4A /* Project object */;
 			proxyType = 1;
@@ -103,6 +111,9 @@
 		1B9F6E1F25C2A577008F7393 /* ProjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectTests.swift; sourceTree = "<group>"; };
 		1B9F6E2325C2B025008F7393 /* AwardTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AwardTests.swift; sourceTree = "<group>"; };
 		1B9F6E2725C2BDAC008F7393 /* DevelopmentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevelopmentTests.swift; sourceTree = "<group>"; };
+		1BAD06ED25DFBB2E00D27EE1 /* TourDeForceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TourDeForceUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1BAD06EF25DFBB2E00D27EE1 /* TourDeForceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TourDeForceUITests.swift; sourceTree = "<group>"; };
+		1BAD06F125DFBB2E00D27EE1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1BB57F0D255F897300F64A4D /* AwardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AwardsView.swift; sourceTree = "<group>"; };
 		1BBABB412556A9B700874075 /* Sequence-Sorting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sequence-Sorting.swift"; sourceTree = "<group>"; };
 		1BDD1D43256CCCE20064055C /* Color-Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color-Additions.swift"; sourceTree = "<group>"; };
@@ -123,6 +134,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		1B52DC4B25D55C2F00ED1B5E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1BAD06EA25DFBB2E00D27EE1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -248,12 +266,22 @@
 			path = PerformanceTests;
 			sourceTree = "<group>";
 		};
+		1BAD06EE25DFBB2E00D27EE1 /* TourDeForceUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1BAD06EF25DFBB2E00D27EE1 /* TourDeForceUITests.swift */,
+				1BAD06F125DFBB2E00D27EE1 /* Info.plist */,
+			);
+			path = TourDeForceUITests;
+			sourceTree = "<group>";
+		};
 		1BF229E225481BDF00051A4A = {
 			isa = PBXGroup;
 			children = (
 				1BF229ED25481BDF00051A4A /* TourDeForce */,
 				1B297A3E25C17B3C003E8A6A /* TourDeForceTests */,
 				1B52DC4F25D55C2F00ED1B5E /* PerformanceTests */,
+				1BAD06EE25DFBB2E00D27EE1 /* TourDeForceUITests */,
 				1BF229EC25481BDF00051A4A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -264,6 +292,7 @@
 				1BF229EB25481BDF00051A4A /* TourDeForce.app */,
 				1B297A3D25C17B3C003E8A6A /* TourDeForceTests.xctest */,
 				1B52DC4E25D55C2F00ED1B5E /* PerformanceTests.xctest */,
+				1BAD06ED25DFBB2E00D27EE1 /* TourDeForceUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -332,6 +361,24 @@
 			productReference = 1B52DC4E25D55C2F00ED1B5E /* PerformanceTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		1BAD06EC25DFBB2E00D27EE1 /* TourDeForceUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1BAD06F625DFBB2E00D27EE1 /* Build configuration list for PBXNativeTarget "TourDeForceUITests" */;
+			buildPhases = (
+				1BAD06E925DFBB2E00D27EE1 /* Sources */,
+				1BAD06EA25DFBB2E00D27EE1 /* Frameworks */,
+				1BAD06EB25DFBB2E00D27EE1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1BAD06F325DFBB2E00D27EE1 /* PBXTargetDependency */,
+			);
+			name = TourDeForceUITests;
+			productName = TourDeForceUITests;
+			productReference = 1BAD06ED25DFBB2E00D27EE1 /* TourDeForceUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		1BF229EA25481BDF00051A4A /* TourDeForce */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1BF229FA25481BE700051A4A /* Build configuration list for PBXNativeTarget "TourDeForce" */;
@@ -367,6 +414,10 @@
 						CreatedOnToolsVersion = 12.4;
 						TestTargetID = 1BF229EA25481BDF00051A4A;
 					};
+					1BAD06EC25DFBB2E00D27EE1 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 1BF229EA25481BDF00051A4A;
+					};
 					1BF229EA25481BDF00051A4A = {
 						CreatedOnToolsVersion = 12.1;
 					};
@@ -389,6 +440,7 @@
 				1BF229EA25481BDF00051A4A /* TourDeForce */,
 				1B297A3C25C17B3C003E8A6A /* TourDeForceTests */,
 				1B52DC4D25D55C2F00ED1B5E /* PerformanceTests */,
+				1BAD06EC25DFBB2E00D27EE1 /* TourDeForceUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -404,6 +456,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		1B52DC4C25D55C2F00ED1B5E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1BAD06EB25DFBB2E00D27EE1 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -469,6 +528,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1BAD06E925DFBB2E00D27EE1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BAD06F025DFBB2E00D27EE1 /* TourDeForceUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1BF229E725481BDF00051A4A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -510,6 +577,11 @@
 			isa = PBXTargetDependency;
 			target = 1BF229EA25481BDF00051A4A /* TourDeForce */;
 			targetProxy = 1B52DC5325D55C2F00ED1B5E /* PBXContainerItemProxy */;
+		};
+		1BAD06F325DFBB2E00D27EE1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1BF229EA25481BDF00051A4A /* TourDeForce */;
+			targetProxy = 1BAD06F225DFBB2E00D27EE1 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -625,6 +697,46 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TourDeForce.app/TourDeForce";
+			};
+			name = Release;
+		};
+		1BAD06F425DFBB2E00D27EE1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2APR69P27L;
+				INFOPLIST_FILE = TourDeForceUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.codecabal.TourDeForceUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TourDeForce;
+			};
+			name = Debug;
+		};
+		1BAD06F525DFBB2E00D27EE1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2APR69P27L;
+				INFOPLIST_FILE = TourDeForceUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.codecabal.TourDeForceUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TourDeForce;
 			};
 			name = Release;
 		};
@@ -807,6 +919,15 @@
 			buildConfigurations = (
 				1B52DC5625D55C2F00ED1B5E /* Debug */,
 				1B52DC5725D55C2F00ED1B5E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1BAD06F625DFBB2E00D27EE1 /* Build configuration list for PBXNativeTarget "TourDeForceUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1BAD06F425DFBB2E00D27EE1 /* Debug */,
+				1BAD06F525DFBB2E00D27EE1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
