@@ -63,11 +63,11 @@ struct ProjectsView: View {
                 Button(action: addProject) {
 
                     // MARK: - iOS accessibility bug with the + sign for adding projects
-                    // In iOS 14.3 VoiceOver has a glitch that reads the lable
+                    // In iOS 14.3 VoiceOver has a glitch that reads the label
                     // "Add Project" as "Add" no matter what accessibility label
                     // we give this toolbar button when using a label.
                     // As a result, when VoiceOver is running, we use a text view for
-                    // the button instead, forcing a correct reading withou losing
+                    // the button instead, forcing a correct reading without losing
                     // the original layout.
                     //
                     // Todo: - Remove this hack when iOS fixed
