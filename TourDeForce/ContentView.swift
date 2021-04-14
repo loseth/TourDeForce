@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
+    @EnvironmentObject var dataController: DataController
     @SceneStorage("selectedView") var selectedView: String?
 
     var body: some View {
@@ -19,14 +20,14 @@ struct ContentView: View {
                     Text("Home")
                 }
 
-            ProjectsView(showClosedProjects: false)
+            ProjectsView(dataController: dataController, showClosedProjects: false)
                 .tag(ProjectsView.openTag)
                 .tabItem {
                     Image(systemName: "list.bullet")
                     Text("Open")
                 }
 
-            ProjectsView(showClosedProjects: true)
+            ProjectsView(dataController: dataController, showClosedProjects: true)
                 .tag(ProjectsView.closedTag)
                 .tabItem {
                     Image(systemName: "checkmark")
