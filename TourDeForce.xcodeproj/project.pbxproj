@@ -43,6 +43,7 @@
 		1BBABB422556A9B700874075 /* Sequence-Sorting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BBABB412556A9B700874075 /* Sequence-Sorting.swift */; };
 		1BC882D82626E2F800F9EA9D /* ProjectsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC882D72626E2F800F9EA9D /* ProjectsViewModel.swift */; };
 		1BC882E626282C2200F9EA9D /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC882E526282C2200F9EA9D /* HomeViewModel.swift */; };
+		1BC882F0262838F600F9EA9D /* ItemRowViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC882EF262838F600F9EA9D /* ItemRowViewModel.swift */; };
 		1BDD1D44256CCCE20064055C /* Color-Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BDD1D43256CCCE20064055C /* Color-Additions.swift */; };
 		1BF229EF25481BDF00051A4A /* TourDeForceApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF229EE25481BDF00051A4A /* TourDeForceApp.swift */; };
 		1BF229F325481BE700051A4A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BF229F225481BE700051A4A /* Assets.xcassets */; };
@@ -120,6 +121,7 @@
 		1BBABB412556A9B700874075 /* Sequence-Sorting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sequence-Sorting.swift"; sourceTree = "<group>"; };
 		1BC882D72626E2F800F9EA9D /* ProjectsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsViewModel.swift; sourceTree = SOURCE_ROOT; };
 		1BC882E526282C2200F9EA9D /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		1BC882EF262838F600F9EA9D /* ItemRowViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemRowViewModel.swift; sourceTree = "<group>"; };
 		1BDD1D43256CCCE20064055C /* Color-Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color-Additions.swift"; sourceTree = "<group>"; };
 		1BF229EB25481BDF00051A4A /* TourDeForce.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TourDeForce.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BF229EE25481BDF00051A4A /* TourDeForceApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TourDeForceApp.swift; sourceTree = "<group>"; };
@@ -230,6 +232,7 @@
 				1B0A1FD725483386006D0605 /* EditItemView.swift */,
 				1B0A2014254C0DDB006D0605 /* EditProjectView.swift */,
 				1B0A1FDB254839A4006D0605 /* ItemRowView.swift */,
+				1BC882EF262838F600F9EA9D /* ItemRowViewModel.swift */,
 				1B0A200C254BFE3A006D0605 /* ProjectHeaderView.swift */,
 				1B35218E2548283B0056294D /* ProjectsView.swift */,
 				1BC882D72626E2F800F9EA9D /* ProjectsViewModel.swift */,
@@ -555,6 +558,7 @@
 				1B35219D25482BA80056294D /* ContentView.swift in Sources */,
 				1BDD1D44256CCCE20064055C /* Color-Additions.swift in Sources */,
 				1B0A2015254C0DDB006D0605 /* EditProjectView.swift in Sources */,
+				1BC882F0262838F600F9EA9D /* ItemRowViewModel.swift in Sources */,
 				1B352199254829B50056294D /* Project-CoreDataHelpers.swift in Sources */,
 				1B548DE3255A4CD900153151 /* SelectSomethingView.swift in Sources */,
 				1B17B8AE255F84A400211431 /* Award.swift in Sources */,
