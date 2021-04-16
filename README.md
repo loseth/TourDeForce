@@ -40,19 +40,34 @@ Not ready for deployment. More to do:
 
 ### Technologies
 
-- [iOS](https://developer.apple.com/ios/) ([iPadOS](https://developer.apple.com/ipados/), [macOS](https://developer.apple.com/macos/) and [watchOS](https://developer.apple.com/watchos/) will follow)
-- [Foundation](https://developer.apple.com/documentation/foundation), [Swift](https://developer.apple.com/documentation/swift/) and [SwiftUI](https://developer.apple.com/documentation/swiftui).
+- **Frameworks**
+	- [Core Data](https://developer.apple.com/documentation/coredata)
+	- [Foundation](https://developer.apple.com/documentation/foundation)
+	- [Swift](https://developer.apple.com/documentation/swift/)
+	- [SwiftUI](https://developer.apple.com/documentation/swiftui)
+- **Operating Systems**
+	- [iOS](https://developer.apple.com/ios/)
+	- [iPadOS](https://developer.apple.com/ipados/)
+	- [macOS](https://developer.apple.com/macos/)
+	- [watchOS](https://developer.apple.com/watchos/)
 
 ### Concepts
 
 - **Accessibility** with [VoiceOver](https://www.apple.com/accessibility/vision/).
 - **Architecture navigation** with [TabView and NavigationView/NavigationLink](https://developer.apple.com/documentation/swiftui/view-layout-and-presentation).
+- **Architecture patterns**
+	- **MVC** [:link:](https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller)
+	- **MVVM** [:link:](https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93viewmodel)
 - **Archiving objects** with [Codable](https://developer.apple.com/documentation/swift/codable) and [JSONDecoder](https://developer.apple.com/documentation/foundation/jsondecoder)
+- **Dependency Injection (Initializer-based)** [Wikipedia](https://en.wikipedia.org/wiki/Dependency_injection)  
 - **Filter and sort objects** with [NSCompundPredicate, NSPredicate, NSSortDescriptor](https://developer.apple.com/documentation/foundation/filters_and_sorting).
 - **Internationalization (i18n) and Localization (i10n)** with [LocalizedStringKey](https://developer.apple.com/documentation/xcode/localization).
 - **Persistent storage** with [Core Data](https://developer.apple.com/documentation/coredata)
 - **SwiftUI data flow and state** with [@Environment, @EnvironmentObject, @Fetchrequest, @ObservedObject, @SceneStorage, @State, @StateObject, and ObservableObject.](https://developer.apple.com/documentation/swiftui/state-and-data-flow)
-- **Unit testing** with [XCTest](https://developer.apple.com/documentation/xctest).
+- **Testing**  with [XCTest](https://developer.apple.com/documentation/xctest).
+	- **Performance testing** [:link:](https://en.wikipedia.org/wiki/Software_performance_testing)
+	- **UI testing** [:link:](https://en.wikipedia.org/wiki/Graphical_user_interface_testing)
+	- **Unit testing** [:link:](https://en.wikipedia.org/wiki/Unit_testing)
 
 ### Tools
 
