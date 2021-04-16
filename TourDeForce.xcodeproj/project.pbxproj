@@ -44,6 +44,7 @@
 		1BC882D82626E2F800F9EA9D /* ProjectsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC882D72626E2F800F9EA9D /* ProjectsViewModel.swift */; };
 		1BC882E626282C2200F9EA9D /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC882E526282C2200F9EA9D /* HomeViewModel.swift */; };
 		1BC882F0262838F600F9EA9D /* ItemRowViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC882EF262838F600F9EA9D /* ItemRowViewModel.swift */; };
+		1BC882FA26296C4C00F9EA9D /* AwardsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC882F926296C4C00F9EA9D /* AwardsViewModel.swift */; };
 		1BDD1D44256CCCE20064055C /* Color-Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BDD1D43256CCCE20064055C /* Color-Additions.swift */; };
 		1BF229EF25481BDF00051A4A /* TourDeForceApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF229EE25481BDF00051A4A /* TourDeForceApp.swift */; };
 		1BF229F325481BE700051A4A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BF229F225481BE700051A4A /* Assets.xcassets */; };
@@ -122,6 +123,7 @@
 		1BC882D72626E2F800F9EA9D /* ProjectsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsViewModel.swift; sourceTree = SOURCE_ROOT; };
 		1BC882E526282C2200F9EA9D /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		1BC882EF262838F600F9EA9D /* ItemRowViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemRowViewModel.swift; sourceTree = "<group>"; };
+		1BC882F926296C4C00F9EA9D /* AwardsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AwardsViewModel.swift; sourceTree = "<group>"; };
 		1BDD1D43256CCCE20064055C /* Color-Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color-Additions.swift"; sourceTree = "<group>"; };
 		1BF229EB25481BDF00051A4A /* TourDeForce.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TourDeForce.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BF229EE25481BDF00051A4A /* TourDeForceApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TourDeForceApp.swift; sourceTree = "<group>"; };
@@ -222,6 +224,7 @@
 				1B17B8AD255F84A400211431 /* Award.swift */,
 				1B31AB6F2572AD1A003575B0 /* Awards.json */,
 				1BB57F0D255F897300F64A4D /* AwardsView.swift */,
+				1BC882F926296C4C00F9EA9D /* AwardsViewModel.swift */,
 			);
 			path = Awards;
 			sourceTree = "<group>";
@@ -567,6 +570,7 @@
 				1B0A1FDF25483D28006D0605 /* Binding-OnChange.swift in Sources */,
 				1B7DACEC257E4A1B00FED66B /* ItemDetailView.swift in Sources */,
 				1BBABB422556A9B700874075 /* Sequence-Sorting.swift in Sources */,
+				1BC882FA26296C4C00F9EA9D /* AwardsViewModel.swift in Sources */,
 				1B17B8A8255F796900211431 /* Bundle-Decodable.swift in Sources */,
 				1B31AB73257CD81D003575B0 /* ItemListView.swift in Sources */,
 				1BC882E626282C2200F9EA9D /* HomeViewModel.swift in Sources */,
