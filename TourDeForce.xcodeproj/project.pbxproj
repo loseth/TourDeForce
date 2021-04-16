@@ -44,6 +44,7 @@
 		1BC882D82626E2F800F9EA9D /* ProjectsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC882D72626E2F800F9EA9D /* ProjectsViewModel.swift */; };
 		1BC882E626282C2200F9EA9D /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC882E526282C2200F9EA9D /* HomeViewModel.swift */; };
 		1BC882F0262838F600F9EA9D /* ItemRowViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC882EF262838F600F9EA9D /* ItemRowViewModel.swift */; };
+		1BC8830426296FEB00F9EA9D /* ProjectHeaderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC8830326296FEB00F9EA9D /* ProjectHeaderViewModel.swift */; };
 		1BDD1D44256CCCE20064055C /* Color-Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BDD1D43256CCCE20064055C /* Color-Additions.swift */; };
 		1BF229EF25481BDF00051A4A /* TourDeForceApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF229EE25481BDF00051A4A /* TourDeForceApp.swift */; };
 		1BF229F325481BE700051A4A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BF229F225481BE700051A4A /* Assets.xcassets */; };
@@ -122,6 +123,7 @@
 		1BC882D72626E2F800F9EA9D /* ProjectsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsViewModel.swift; sourceTree = SOURCE_ROOT; };
 		1BC882E526282C2200F9EA9D /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		1BC882EF262838F600F9EA9D /* ItemRowViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemRowViewModel.swift; sourceTree = "<group>"; };
+		1BC8830326296FEB00F9EA9D /* ProjectHeaderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectHeaderViewModel.swift; sourceTree = "<group>"; };
 		1BDD1D43256CCCE20064055C /* Color-Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color-Additions.swift"; sourceTree = "<group>"; };
 		1BF229EB25481BDF00051A4A /* TourDeForce.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TourDeForce.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BF229EE25481BDF00051A4A /* TourDeForceApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TourDeForceApp.swift; sourceTree = "<group>"; };
@@ -234,6 +236,7 @@
 				1B0A1FDB254839A4006D0605 /* ItemRowView.swift */,
 				1BC882EF262838F600F9EA9D /* ItemRowViewModel.swift */,
 				1B0A200C254BFE3A006D0605 /* ProjectHeaderView.swift */,
+				1BC8830326296FEB00F9EA9D /* ProjectHeaderViewModel.swift */,
 				1B35218E2548283B0056294D /* ProjectsView.swift */,
 				1BC882D72626E2F800F9EA9D /* ProjectsViewModel.swift */,
 				1B548DE2255A4CD900153151 /* SelectSomethingView.swift */,
@@ -566,6 +569,7 @@
 				1B35218B254825E90056294D /* DataController.swift in Sources */,
 				1B0A1FDF25483D28006D0605 /* Binding-OnChange.swift in Sources */,
 				1B7DACEC257E4A1B00FED66B /* ItemDetailView.swift in Sources */,
+				1BC8830426296FEB00F9EA9D /* ProjectHeaderViewModel.swift in Sources */,
 				1BBABB422556A9B700874075 /* Sequence-Sorting.swift in Sources */,
 				1B17B8A8255F796900211431 /* Bundle-Decodable.swift in Sources */,
 				1B31AB73257CD81D003575B0 /* ItemListView.swift in Sources */,
