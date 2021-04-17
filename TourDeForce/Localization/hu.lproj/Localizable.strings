@@ -108,3 +108,6 @@
 
 /* Shown by default when the user hasn't select a project or item */
 "Please select something from the menu to begin." = "A kezdéshez válasszon valamit a menüből.";
+
+/* Add sample testing data on the Home view. */
+"Add Data" = "Adatok Hozzáadása";
