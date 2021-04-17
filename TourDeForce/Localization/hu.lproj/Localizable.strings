@@ -63,7 +63,7 @@
 
 /* Options to close (mark as finished), open (mark as unfinished), or delete a project. */
 "Close this project" = "Projekt bezárása";
-"Closing a project moves it from the Open to Closed tab; deleting it removes the project completely." = "A projekt bezárásával a Nyitottról a Zárt ablakba kerül; törlésével a projekt teljesen el lesz távolítva.";
+"Closing a project moves it from the Open to Closed tab; deleting it removes the project entirely." = "A projekt bezárásával a Nyitottról a Zárt ablakba kerül; törlésével a projekt teljesen el lesz távolítva.";
 "Reopen this project" = "Projekt újra nyitása";
 "Delete this project" = "Projekt törlése";
 "Delete project?" = "Projekt törlése?";
