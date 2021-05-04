@@ -46,13 +46,7 @@ struct EditProjectView: View {
 
             // swiftlint:disable:next line_length
             Section(footer: Text("Closing a project moves it from the Open to the Closed tab; deleting it removes the project entirely")) {
-                Button(project.closed ? "Reopen this project" : "Close this project") {
-                    project.closed.toggle()
-
-                    if project.closed {
-                        UINotificationFeedbackGenerator().notificationOccurred(.success)
-                    }
-                }
+                Button(project.closed ? "Reopen this project" : "Close this project", action: toggleClosed)
 
                 Button("Delete this project") {
                     showingDeleteConfirm.toggle()
@@ -80,6 +74,14 @@ struct EditProjectView: View {
     func delete() {
         dataController.delete(project)
         presentationMode.wrappedValue.dismiss()
+    }
+
+    func toggleClosed() {
+        project.closed.toggle()
+
+        if project.closed {
+            UINotificationFeedbackGenerator().notificationOccurred(.success)
+        }
     }
 
     func colorButton(for item: String) -> some View {
