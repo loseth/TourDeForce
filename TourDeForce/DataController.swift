@@ -181,4 +181,17 @@ class DataController: ObservableObject {
 
         save()
     }
+
+    /// Find and return an item from Core Data given a unique identifier
+    /// - Parameter uniqueIdentifier: A unique identifier to query Core Data with.
+    /// - Returns: The found item, or nil if not found.
+    func item(with uniqueIdentifier: String) -> Item? {
+        guard let url = URL(string: uniqueIdentifier) else { return nil }
+
+        guard let id = container.persistentStoreCoordinator.managedObjectID(forURIRepresentation: url) else {
+            return nil
+        }
+
+        return try? container.viewContext.existingObject(with: id) as? Item
+    }
 }
