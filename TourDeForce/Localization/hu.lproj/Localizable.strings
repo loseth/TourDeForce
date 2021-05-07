@@ -83,6 +83,13 @@
 "Dark Gray" = "Sötét szürke";
 "Gray" = "Szürke";
 
+"Project reminders" = "Projekt emlékeztető";
+"Show reminders" = "Emlékeztetők megjelenítése";
+"Oops!" = "Hoppá!";
+"There was a problem. Please check you have notifications enabled." = "Probléma. Ellenőrizze, hogy engedélyezve vannak az értesítések.";
+"Check Settings" = "Ellenőrizze a Beállításokat";
+"Reminder time" = "Emlékeztető ideje";
+
 
 /* EDITING ITEMS */
 "Edit Item" = "Tétel szerkesztése";
