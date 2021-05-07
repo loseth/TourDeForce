@@ -221,18 +221,67 @@ class DataController: ObservableObject {
     // MARK: - Notifications
 
     func addReminders(for project: Project, completion: @escaping (Bool) -> Void) {
+        let center = UNUserNotificationCenter.current()
 
+        center.getNotificationSettings { settings in
+            switch settings.authorizationStatus {
+            case .notDetermined:
+                self.requestNotifications { success in
+                    if success {
+                        self.placeReminders(for: project, completion: completion)
+                    } else {
+                        completion(false)
+                    }
+                }
+            case .authorized:
+                self.addReminders(for: project, completion: completion)
+            default:
+                DispatchQueue.main.async {
+                    completion(false)
+                }
+            }
+        }
     }
 
     func removeReminders(for project: Project) {
+        let center = UNUserNotificationCenter.current()
+        let id = project.objectID.uriRepresentation().absoluteString
 
+        center.removeDeliveredNotifications(withIdentifiers: [id])
     }
 
     private func requestNotifications(completion: @escaping (Bool) -> Void) {
+        let center = UNUserNotificationCenter.current()
 
+        center.requestAuthorization(options: [.alert, .sound]) { granted, _ in
+            completion(granted)
+        }
     }
 
     private func placeReminders(for project: Project, completion: @escaping (Bool) -> Void) {
+        let content = UNMutableNotificationContent()
+        content.title = project.projectTitle
+        content.sound = .default
 
+        if let projectDetail = project.detail {
+            content.subtitle = projectDetail
+        }
+
+        let components = Calendar.current.dateComponents(
+            [.hour, .minute],
+            from: project.reminderTime ?? Date()
+        )
+        let trigger = UNCalendarNotificationTrigger(dateMatching: components, repeats: true)
+
+        let id = project.objectID.uriRepresentation().absoluteString
+        let request = UNNotificationRequest(identifier: id, content: content, trigger: trigger)
+
+        UNUserNotificationCenter.current().add(request) { error in
+            if error == nil {
+                completion(true)
+            } else {
+                completion(false)
+            }
+        }
     }
 }
