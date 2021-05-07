@@ -17,7 +17,9 @@ struct EditProjectView: View {
     @State private var title: String
     @State private var detail: String
     @State private var color: String
+
     @State private var showingDeleteConfirm = false
+    @State private var showingNotificationsError = false
 
     @State private var remindMe: Bool
     @State private var reminderTime: Date
@@ -60,6 +62,12 @@ struct EditProjectView: View {
 
             Section(header: Text("Project reminders")) {
                 Toggle("Show reminders", isOn: $remindMe.animation().onChange(update))
+                    .alert(isPresented: $showingNotificationsError) {
+                        Alert(title: Text("Oops!"),
+                              message: Text("There was a problem. Please check you have notifications enables."),
+                              primaryButton: .default(Text("Check Settings"), action: showAppSettings),
+                              secondaryButton: .cancel())
+                    }
 
                 if remindMe {
                     DatePicker(
@@ -98,8 +106,17 @@ struct EditProjectView: View {
 
         if remindMe {
             project.reminderTime = reminderTime
+
+            dataController.addReminders(for: project) { success in
+                if success == false {
+                    project.reminderTime = nil
+                    remindMe = false
+                    showingNotificationsError = true
+                }
+            }
         } else {
             project.reminderTime = nil
+            dataController.removeReminders(for: project)
         }
     }
 
@@ -174,6 +191,16 @@ struct EditProjectView: View {
         .accessibilityElement(children: .ignore)
         .accessibilityAddTraits(item == color ? [.isButton, .isSelected] : .isButton)
         .accessibilityLabel(LocalizedStringKey(item))
+    }
+
+    func showAppSettings() {
+        guard let settingsURL = URL(string: UIApplication.openSettingsURLString) else {
+            return
+        }
+
+        if UIApplication.shared.canOpenURL(settingsURL) {
+            UIApplication.shared.open(settingsURL)
+        }
     }
 }
 
