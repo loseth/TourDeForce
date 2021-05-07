@@ -22,7 +22,7 @@ It uses [Gamification](https://en.wikipedia.org/wiki/Gamification) through award
 
 ## Authors and acknowledgment
 The app is based on the **Ultimate Portfolio App** course from [Paul Hudson (@twostraws)](https://twitter.com/twostraws) at [Hacking with Swift](https://www.hackingwithswift.com/).  
-I would like to thank Paul for not only guiding us through his part of the code, but also for the amazing contributions (in both scope an clarity) that he has made to the Swift community.
+I would like to thank Paul for the amazing contributions (in both scope an clarity) that he has made to the Swift community.
 
 All other code is written by the maintainer of this repository, [Tor Rafsol Løseth (@loseth)](https://twitter.com/loseth).
 
@@ -34,6 +34,7 @@ Not ready for deployment. More to do:
 - Multiplatform (iOS, iPadOS, macOS, watchOS)
 - New visual design, including awards symbols
 	- Make awards more valuable
+	- On Home screen make tapping a project go to project screen
 - Settle on business model, if any	
 
 ## Knowledge applied
@@ -41,15 +42,9 @@ Not ready for deployment. More to do:
 ### Technologies
 
 - **Frameworks**
-	- [Core Data](https://developer.apple.com/documentation/coredata)
-	- [Foundation](https://developer.apple.com/documentation/foundation)
-	- [Swift](https://developer.apple.com/documentation/swift/)
-	- [SwiftUI](https://developer.apple.com/documentation/swiftui)
+	- [Core Data](https://developer.apple.com/documentation/coredata), [Foundation](https://developer.apple.com/documentation/foundation), [Swift](https://developer.apple.com/documentation/swift/), [SwiftUI](https://developer.apple.com/documentation/swiftui)
 - **Operating Systems**
-	- [iOS](https://developer.apple.com/ios/)
-	- [iPadOS](https://developer.apple.com/ipados/)
-	- [macOS](https://developer.apple.com/macos/)
-	- [watchOS](https://developer.apple.com/watchos/)
+	- [iOS](https://developer.apple.com/ios/), [iPadOS](https://developer.apple.com/ipados/), [macOS](https://developer.apple.com/macos/), [watchOS](https://developer.apple.com/watchos/)
 
 ### Concepts
 
@@ -61,13 +56,17 @@ Not ready for deployment. More to do:
 - **Archiving objects** with [Codable](https://developer.apple.com/documentation/swift/codable) and [JSONDecoder](https://developer.apple.com/documentation/foundation/jsondecoder)
 - **Dependency Injection (Initializer-based)** [Wikipedia](https://en.wikipedia.org/wiki/Dependency_injection)  
 - **Filter and sort objects** with [NSCompundPredicate, NSPredicate, NSSortDescriptor](https://developer.apple.com/documentation/foundation/filters_and_sorting).
+- **Haptics** with [Core Haptics](https://developer.apple.com/documentation/corehaptics)
 - **Internationalization (i18n) and Localization (i10n)** with [LocalizedStringKey](https://developer.apple.com/documentation/xcode/localization).
+- **Notifications (local)** with [User Notifications](https://developer.apple.com/documentation/usernotifications)
 - **Persistent storage** with [Core Data](https://developer.apple.com/documentation/coredata)
+- **Search** with [Core Spotlight](https://developer.apple.com/documentation/corespotlight/)
 - **SwiftUI data flow and state** with [@Environment, @EnvironmentObject, @Fetchrequest, @ObservedObject, @SceneStorage, @State, @StateObject, and ObservableObject.](https://developer.apple.com/documentation/swiftui/state-and-data-flow)
 - **Testing**  with [XCTest](https://developer.apple.com/documentation/xctest).
 	- **Performance testing** [:link:](https://en.wikipedia.org/wiki/Software_performance_testing)
 	- **UI testing** [:link:](https://en.wikipedia.org/wiki/Graphical_user_interface_testing)
 	- **Unit testing** [:link:](https://en.wikipedia.org/wiki/Unit_testing)
+
 
 ### Tools
 
