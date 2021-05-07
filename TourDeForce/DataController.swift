@@ -108,16 +108,22 @@ class DataController: ObservableObject {
     }
 
     /// Remove a record from the Core Data context.
+    /// Remove Spotlight search result for all items for a project with a unique identifier.
     /// - Parameter object: A Core Data record to be removed.
-    func delete(_ object: NSManagedObject) {
+    func delete(_ object: Project) {
         let id = object.objectID.uriRepresentation().absoluteString
+        CSSearchableIndex.default().deleteSearchableItems(withDomainIdentifiers: [id])
 
-        if object is Item {
-            CSSearchableIndex.default().deleteSearchableItems(withIdentifiers: [id])
+        container.viewContext.delete(object)
+    }
 
-        } else {
-            CSSearchableIndex.default().deleteSearchableItems(withDomainIdentifiers: [id])
-        }
+    /// Remove a record from the Core Data context.
+    /// Remove Spotlight search result for items with a unique identifier.
+    /// - Parameter object: A Core Data record to be removed.
+    func delete(_ object: Item) {
+        let id = object.objectID.uriRepresentation().absoluteString
+        CSSearchableIndex.default().deleteSearchableItems(withIdentifiers: [id])
+
         container.viewContext.delete(object)
     }
 
