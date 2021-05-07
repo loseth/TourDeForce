@@ -57,6 +57,8 @@ class DataController: ObservableObject {
         return dataController
     }()
 
+    // MARK: - Core Data
+
     static let model: NSManagedObjectModel = {
         guard let url = Bundle.main.url(
                 forResource: "Main",
@@ -69,34 +71,6 @@ class DataController: ObservableObject {
 
         return managedObjectModel
     }()
-
-    /// Creates example projects and items to make manual testing easier.
-    /// - Throws: An NSError sent from calling save() on the NSManagedObjectContext.
-    /// - Note: For testing and previewing purposes, it was previously used in conjunction with
-    /// deleteAll() to create and delete sample data.  Keep the code, it could be useful later.
-    func createSampleData() throws {
-        let viewContext = container.viewContext
-
-        for projectCounter in 1...5 {
-            let project = Project(context: viewContext)
-            project.closed = Bool.random()
-            project.creationDate = Date()
-            project.items = []
-            project.title = "Project \(projectCounter)"
-
-            for itemCounter in 1...10 {
-                let item = Item(context: viewContext)
-                item.completed = Bool.random()
-                item.creationDate = Date()
-                item.priority = Int16.random(in: 1...3)
-                // Core Data will with this add the item to the project.items array
-                item.project = project
-                item.title = "Item \(itemCounter)"
-            }
-        }
-
-        try viewContext.save()
-    }
 
     /// Saves our Code Data context iff there are changes. This silently ignores
     /// any errors caused by saving, but this should be fine because our
@@ -147,6 +121,38 @@ class DataController: ObservableObject {
         (try? container.viewContext.count(for: fetchRequest)) ?? 0
     }
 
+    // MARK: - Example data
+
+    /// Creates example projects and items to make manual testing easier.
+    /// - Throws: An NSError sent from calling save() on the NSManagedObjectContext.
+    /// - Note: For testing and previewing purposes, it was previously used in conjunction with
+    /// deleteAll() to create and delete sample data.  Keep the code, it could be useful later.
+    func createSampleData() throws {
+        let viewContext = container.viewContext
+
+        for projectCounter in 1...5 {
+            let project = Project(context: viewContext)
+            project.closed = Bool.random()
+            project.creationDate = Date()
+            project.items = []
+            project.title = "Project \(projectCounter)"
+
+            for itemCounter in 1...10 {
+                let item = Item(context: viewContext)
+                item.completed = Bool.random()
+                item.creationDate = Date()
+                item.priority = Int16.random(in: 1...3)
+                // Core Data will with this add the item to the project.items array
+                item.project = project
+                item.title = "Item \(itemCounter)"
+            }
+        }
+
+        try viewContext.save()
+    }
+
+    // MARK: - Awards earned
+
     /// Whether enough tasks have been achieved to earn an award,
     /// either from adding or completing a certain number of items,
     /// - Parameter award: An Award object.
@@ -174,6 +180,8 @@ class DataController: ObservableObject {
             return false
         }
     }
+
+    // MARK: - Spotlight integration
 
     /// In Spotlight, include results from a query for an item.
     /// - Parameter item: The item to be queried for.
@@ -208,4 +216,8 @@ class DataController: ObservableObject {
 
         return try? container.viewContext.existingObject(with: id) as? Item
     }
+
+    // MARK: - Notifications
+
+
 }
