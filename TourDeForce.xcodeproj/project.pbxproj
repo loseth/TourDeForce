@@ -119,6 +119,7 @@
 		1BAD06EF25DFBB2E00D27EE1 /* TourDeForceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TourDeForceUITests.swift; sourceTree = "<group>"; };
 		1BAD06F125DFBB2E00D27EE1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1BAE4A35264BEA360083DC00 /* UnlockManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnlockManager.swift; sourceTree = "<group>"; };
+		1BAE4A37264BFBB70083DC00 /* Configuration.storekit */ = {isa = PBXFileReference; lastKnownFileType = text; path = Configuration.storekit; sourceTree = "<group>"; };
 		1BB57F0D255F897300F64A4D /* AwardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AwardsView.swift; sourceTree = "<group>"; };
 		1BBABB412556A9B700874075 /* Sequence-Sorting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sequence-Sorting.swift"; sourceTree = "<group>"; };
 		1BC882D72626E2F800F9EA9D /* ProjectsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsViewModel.swift; sourceTree = SOURCE_ROOT; };
@@ -192,6 +193,7 @@
 			children = (
 				1BF229F725481BE700051A4A /* Info.plist */,
 				1BF229FF2548227A00051A4A /* Main.xcdatamodeld */,
+				1BAE4A37264BFBB70083DC00 /* Configuration.storekit */,
 			);
 			path = Configuration;
 			sourceTree = "<group>";

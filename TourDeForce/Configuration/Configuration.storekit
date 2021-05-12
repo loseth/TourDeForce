@@ -1,0 +1,33 @@
+{
+  "identifier" : "601F6F8F",
+  "nonRenewingSubscriptions" : [
+
+  ],
+  "products" : [
+    {
+      "displayPrice" : "0299",
+      "familyShareable" : true,
+      "internalID" : "9C90F5B1",
+      "localizations" : [
+        {
+          "description" : "",
+          "displayName" : "",
+          "locale" : "en_US"
+        }
+      ],
+      "productID" : "com.codecabal.TourDeForce.unlock",
+      "referenceName" : "Unlock Full App",
+      "type" : "NonConsumable"
+    }
+  ],
+  "settings" : {
+
+  },
+  "subscriptionGroups" : [
+
+  ],
+  "version" : {
+    "major" : 1,
+    "minor" : 1
+  }
+}
