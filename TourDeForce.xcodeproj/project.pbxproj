@@ -39,6 +39,7 @@
 		1B9F6E2425C2B025008F7393 /* AwardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9F6E2325C2B025008F7393 /* AwardTests.swift */; };
 		1B9F6E2825C2BDAC008F7393 /* DevelopmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9F6E2725C2BDAC008F7393 /* DevelopmentTests.swift */; };
 		1BAD06F025DFBB2E00D27EE1 /* TourDeForceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BAD06EF25DFBB2E00D27EE1 /* TourDeForceUITests.swift */; };
+		1BAE4A36264BEA360083DC00 /* UnlockManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BAE4A35264BEA360083DC00 /* UnlockManager.swift */; };
 		1BB57F0E255F897300F64A4D /* AwardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB57F0D255F897300F64A4D /* AwardsView.swift */; };
 		1BBABB422556A9B700874075 /* Sequence-Sorting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BBABB412556A9B700874075 /* Sequence-Sorting.swift */; };
 		1BC882D82626E2F800F9EA9D /* ProjectsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC882D72626E2F800F9EA9D /* ProjectsViewModel.swift */; };
@@ -117,6 +118,7 @@
 		1BAD06ED25DFBB2E00D27EE1 /* TourDeForceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TourDeForceUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BAD06EF25DFBB2E00D27EE1 /* TourDeForceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TourDeForceUITests.swift; sourceTree = "<group>"; };
 		1BAD06F125DFBB2E00D27EE1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1BAE4A35264BEA360083DC00 /* UnlockManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnlockManager.swift; sourceTree = "<group>"; };
 		1BB57F0D255F897300F64A4D /* AwardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AwardsView.swift; sourceTree = "<group>"; };
 		1BBABB412556A9B700874075 /* Sequence-Sorting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sequence-Sorting.swift"; sourceTree = "<group>"; };
 		1BC882D72626E2F800F9EA9D /* ProjectsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsViewModel.swift; sourceTree = SOURCE_ROOT; };
@@ -312,6 +314,7 @@
 				1BF229EE25481BDF00051A4A /* TourDeForceApp.swift */,
 				1B35219C25482BA80056294D /* ContentView.swift */,
 				1B35218A254825E90056294D /* DataController.swift */,
+				1BAE4A35264BEA360083DC00 /* UnlockManager.swift */,
 				1B297A3125BF094D003E8A6A /* Activities */,
 				1B0A1FE125483FB6006D0605 /* Extensions */,
 				1B297A2C25BF03E2003E8A6A /* Localization */,
@@ -554,6 +557,7 @@
 				1B0A200D254BFE3A006D0605 /* ProjectHeaderView.swift in Sources */,
 				1BC882D82626E2F800F9EA9D /* ProjectsViewModel.swift in Sources */,
 				1BB57F0E255F897300F64A4D /* AwardsView.swift in Sources */,
+				1BAE4A36264BEA360083DC00 /* UnlockManager.swift in Sources */,
 				1BF22A012548227A00051A4A /* Main.xcdatamodeld in Sources */,
 				1B35219D25482BA80056294D /* ContentView.swift in Sources */,
 				1BDD1D44256CCCE20064055C /* Color-Additions.swift in Sources */,
