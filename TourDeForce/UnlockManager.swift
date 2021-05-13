@@ -67,4 +67,13 @@ class UnlockManager: NSObject, ObservableObject, SKPaymentTransactionObserver, S
             self.requestState = .loaded(unlock)
         }
     }
+
+    func buy(product: SKProduct) {
+        let payment = SKPayment(product: product)
+        SKPaymentQueue.default().add(payment)
+    }
+
+    func restore() {
+        SKPaymentQueue.default().restoreCompletedTransactions()
+    }
 }
