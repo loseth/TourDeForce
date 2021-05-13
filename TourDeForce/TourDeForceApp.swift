@@ -27,7 +27,7 @@ struct TourDeForceApp: App {
                 .environmentObject(dataController)
                 .environmentObject(unlockManager)
                 // Automatically save when we detect that we are no longer
-                // the forground app. Use this rather than the scene phase
+                // the foreground app. Use this rather than the scene phase
                 // API so we can port to macOS, where scene phase won't detect
                 // our app losing focus as of macOS 11.1.
                 .onReceive(

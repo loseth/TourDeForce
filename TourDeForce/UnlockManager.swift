@@ -11,17 +11,22 @@ import StoreKit
 class UnlockManager: NSObject, ObservableObject, SKPaymentTransactionObserver, SKProductsRequestDelegate {
     enum RequestState {
         case loading
-        case loaded
-        case failed
+        case loaded(SKProduct)
+        case failed(Error?)
         case purchased
         case deferred
+    }
+
+    private enum StoreError: Error {
+        case invalidIdentifiers
+        case missingProduct
     }
 
     @Published var requestState = RequestState.loading
 
     private let dataController: DataController
     private let request: SKProductsRequest
-    private let loadedProducts = [SKProduct]()
+    private var loadedProducts = [SKProduct]()
 
     init(dataController: DataController) {
         self.dataController = dataController
@@ -45,6 +50,21 @@ class UnlockManager: NSObject, ObservableObject, SKPaymentTransactionObserver, S
     }
 
     func productsRequest(_ request: SKProductsRequest, didReceive response: SKProductsResponse) {
+        DispatchQueue.main.async {
+            self.loadedProducts = response.products
 
+            guard let unlock = self.loadedProducts.first else {
+                self.requestState = .failed(StoreError.missingProduct)
+                return
+            }
+
+            if response.invalidProductIdentifiers.isEmpty == false {
+                print("ALERT: Received invalid product indentifiers: \(response.invalidProductIdentifiers)")
+                self.requestState = .failed(StoreError.invalidIdentifiers)
+                return
+            }
+
+            self.requestState = .loaded(unlock)
+        }
     }
 }
