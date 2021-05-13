@@ -37,6 +37,8 @@ class UnlockManager: NSObject, ObservableObject, SKPaymentTransactionObserver, S
         super.init()
 
         SKPaymentQueue.default().add(self)
+
+        guard dataController.fullVersionUnlocked == false else { return }
         request.delegate = self
         request.start()
     }
