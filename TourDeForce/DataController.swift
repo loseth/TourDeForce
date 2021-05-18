@@ -7,6 +7,7 @@
 
 import CoreData
 import CoreSpotlight
+import StoreKit
 import SwiftUI
 import UserNotifications
 
@@ -299,6 +300,20 @@ class DataController: ObservableObject {
             } else {
                 completion(false)
             }
+        }
+    }
+
+    /// Find foremost window, of our active app, to request a review when user has made more than 5 projects
+    func appLaunched() {
+        // This uses UIKit, if SwiftUI gets this functionality later; refactor.
+        // Add recurring review request? 5, 10, 15… ?
+        guard count(for: Project.fetchRequest()) >= 5 else { return }
+
+        let allScenes = UIApplication.shared.connectedScenes
+        let scene = allScenes.first { $0.activationState == .foregroundActive }
+
+        if let windowScene = scene as? UIWindowScene {
+            SKStoreReviewController.requestReview(in: windowScene)
         }
     }
 }
