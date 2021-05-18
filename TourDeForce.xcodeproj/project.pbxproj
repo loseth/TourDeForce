@@ -50,6 +50,7 @@
 		1BF229F325481BE700051A4A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BF229F225481BE700051A4A /* Assets.xcassets */; };
 		1BF229F625481BE700051A4A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BF229F525481BE700051A4A /* Preview Assets.xcassets */; };
 		1BF22A012548227A00051A4A /* Main.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1BF229FF2548227A00051A4A /* Main.xcdatamodeld */; };
+		1BFEF4C22653B2C3005F02EB /* SKProduct-LocalizedPrice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BFEF4C12653B2C3005F02EB /* SKProduct-LocalizedPrice.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -132,6 +133,7 @@
 		1BF229F525481BE700051A4A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1BF229F725481BE700051A4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1BF22A002548227A00051A4A /* Main.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Main.xcdatamodel; sourceTree = "<group>"; };
+		1BFEF4C12653B2C3005F02EB /* SKProduct-LocalizedPrice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SKProduct-LocalizedPrice.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,6 +177,7 @@
 				1B352198254829B50056294D /* Item-CoreDataHelpers.swift */,
 				1B352197254829B50056294D /* Project-CoreDataHelpers.swift */,
 				1BBABB412556A9B700874075 /* Sequence-Sorting.swift */,
+				1BFEF4C12653B2C3005F02EB /* SKProduct-LocalizedPrice.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -575,6 +578,7 @@
 				1BBABB422556A9B700874075 /* Sequence-Sorting.swift in Sources */,
 				1B17B8A8255F796900211431 /* Bundle-Decodable.swift in Sources */,
 				1B31AB73257CD81D003575B0 /* ItemListView.swift in Sources */,
+				1BFEF4C22653B2C3005F02EB /* SKProduct-LocalizedPrice.swift in Sources */,
 				1BC882E626282C2200F9EA9D /* HomeViewModel.swift in Sources */,
 				1B35218F2548283B0056294D /* HomeView.swift in Sources */,
 				1BF229EF25481BDF00051A4A /* TourDeForceApp.swift in Sources */,
