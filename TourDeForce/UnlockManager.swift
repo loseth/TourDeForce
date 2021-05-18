@@ -28,6 +28,11 @@ class UnlockManager: NSObject, ObservableObject, SKPaymentTransactionObserver, S
     private let request: SKProductsRequest
     private var loadedProducts = [SKProduct]()
 
+    // If I wish to check for this at a later stage, currently not used.
+    var canMakePayments: Bool {
+        SKPaymentQueue.canMakePayments()
+    }
+
     init(dataController: DataController) {
         self.dataController = dataController
 
