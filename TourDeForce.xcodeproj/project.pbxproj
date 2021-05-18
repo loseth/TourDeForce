@@ -53,6 +53,7 @@
 		1BFEF4C22653B2C3005F02EB /* SKProduct-LocalizedPrice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BFEF4C12653B2C3005F02EB /* SKProduct-LocalizedPrice.swift */; };
 		1BFEF4C42653B4FA005F02EB /* PurchaseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BFEF4C32653B4FA005F02EB /* PurchaseButton.swift */; };
 		1BFEF4C72653B755005F02EB /* ProductView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BFEF4C62653B755005F02EB /* ProductView.swift */; };
+		1BFEF4C92653DE4D005F02EB /* UnlockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BFEF4C82653DE4D005F02EB /* UnlockView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -138,6 +139,7 @@
 		1BFEF4C12653B2C3005F02EB /* SKProduct-LocalizedPrice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SKProduct-LocalizedPrice.swift"; sourceTree = "<group>"; };
 		1BFEF4C32653B4FA005F02EB /* PurchaseButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseButton.swift; sourceTree = "<group>"; };
 		1BFEF4C62653B755005F02EB /* ProductView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductView.swift; sourceTree = "<group>"; };
+		1BFEF4C82653DE4D005F02EB /* UnlockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnlockView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -349,6 +351,7 @@
 			children = (
 				1BFEF4C62653B755005F02EB /* ProductView.swift */,
 				1BFEF4C32653B4FA005F02EB /* PurchaseButton.swift */,
+				1BFEF4C82653DE4D005F02EB /* UnlockView.swift */,
 			);
 			path = Store;
 			sourceTree = "<group>";
@@ -585,6 +588,7 @@
 				1BC882F0262838F600F9EA9D /* ItemRowViewModel.swift in Sources */,
 				1B352199254829B50056294D /* Project-CoreDataHelpers.swift in Sources */,
 				1B548DE3255A4CD900153151 /* SelectSomethingView.swift in Sources */,
+				1BFEF4C92653DE4D005F02EB /* UnlockView.swift in Sources */,
 				1B17B8AE255F84A400211431 /* Award.swift in Sources */,
 				1BFEF4C42653B4FA005F02EB /* PurchaseButton.swift in Sources */,
 				1B0A1FDC254839A4006D0605 /* ItemRowView.swift in Sources */,
