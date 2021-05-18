@@ -52,6 +52,7 @@
 		1BF22A012548227A00051A4A /* Main.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1BF229FF2548227A00051A4A /* Main.xcdatamodeld */; };
 		1BFEF4C22653B2C3005F02EB /* SKProduct-LocalizedPrice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BFEF4C12653B2C3005F02EB /* SKProduct-LocalizedPrice.swift */; };
 		1BFEF4C42653B4FA005F02EB /* PurchaseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BFEF4C32653B4FA005F02EB /* PurchaseButton.swift */; };
+		1BFEF4C72653B755005F02EB /* ProductView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BFEF4C62653B755005F02EB /* ProductView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -136,6 +137,7 @@
 		1BF22A002548227A00051A4A /* Main.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Main.xcdatamodel; sourceTree = "<group>"; };
 		1BFEF4C12653B2C3005F02EB /* SKProduct-LocalizedPrice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SKProduct-LocalizedPrice.swift"; sourceTree = "<group>"; };
 		1BFEF4C32653B4FA005F02EB /* PurchaseButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseButton.swift; sourceTree = "<group>"; };
+		1BFEF4C62653B755005F02EB /* ProductView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -345,6 +347,7 @@
 		1BFEF4C52653B659005F02EB /* Store */ = {
 			isa = PBXGroup;
 			children = (
+				1BFEF4C62653B755005F02EB /* ProductView.swift */,
 				1BFEF4C32653B4FA005F02EB /* PurchaseButton.swift */,
 			);
 			path = Store;
@@ -569,6 +572,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1B3521902548283B0056294D /* ProjectsView.swift in Sources */,
+				1BFEF4C72653B755005F02EB /* ProductView.swift in Sources */,
 				1B31AB78257CDAC0003575B0 /* ProjectSummaryView.swift in Sources */,
 				1B0A200D254BFE3A006D0605 /* ProjectHeaderView.swift in Sources */,
 				1BC882D82626E2F800F9EA9D /* ProjectsViewModel.swift in Sources */,
