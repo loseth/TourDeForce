@@ -213,6 +213,7 @@
 				1B297A3225BF0957003E8A6A /* Home */,
 				1B297A3425BF0969003E8A6A /* Projects */,
 				1B297A3325BF0960003E8A6A /* Awards */,
+				1BFEF4C52653B659005F02EB /* Unlock */,
 			);
 			path = Activities;
 			sourceTree = "<group>";
@@ -325,9 +326,7 @@
 				1BF229EE25481BDF00051A4A /* TourDeForceApp.swift */,
 				1B35219C25482BA80056294D /* ContentView.swift */,
 				1B35218A254825E90056294D /* DataController.swift */,
-				1BAE4A35264BEA360083DC00 /* UnlockManager.swift */,
 				1B297A3125BF094D003E8A6A /* Activities */,
-				1BFEF4C52653B659005F02EB /* Store */,
 				1B0A1FE125483FB6006D0605 /* Extensions */,
 				1B297A2C25BF03E2003E8A6A /* Localization */,
 				1B297A2D25BF03F4003E8A6A /* Configuration */,
@@ -346,14 +345,15 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		1BFEF4C52653B659005F02EB /* Store */ = {
+		1BFEF4C52653B659005F02EB /* Unlock */ = {
 			isa = PBXGroup;
 			children = (
 				1BFEF4C62653B755005F02EB /* ProductView.swift */,
 				1BFEF4C32653B4FA005F02EB /* PurchaseButton.swift */,
+				1BAE4A35264BEA360083DC00 /* UnlockManager.swift */,
 				1BFEF4C82653DE4D005F02EB /* UnlockView.swift */,
 			);
-			path = Store;
+			path = Unlock;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
