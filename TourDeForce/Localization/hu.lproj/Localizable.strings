@@ -110,6 +110,19 @@
 "Unlocked: %@" = "Nyitott: %@";
 
 
+/* UNLOCKING PREMIUM */
+"Get Unlimited Projects" = "Szerezzen korlátlan projekteket";
+"You can add three projects for free, or pay %@ to add unlimited projects." = "Ingyen adhat hozzá három projektet, vagy korlátlan projekt hozzáadásához %@ fizethet.";
+"If you already bought the unlock on another device, press Restore Purchases." = "Ha már egy másik eszközön megvásárolta a feloldást, nyomja meg a Vásárlások visszaállítása gombot.";
+"Restore Purchases" = "Vásárlások visszaállítása";
+"Sorry, there was an error loading the store. Please try again later." = "Sajnos hiba történt az áruház betöltésekor. Kérjük próbálja újra később.";
+"Buy: %@" = "Vedd meg: %@";
+"Loading…" = "Betöltés…";
+"Thank you!" = "Köszönjük!";
+"Thank you! Your request is pending approval, but you can carry on using the app in the meantime." = "Köszönöm! Kérése jóváhagyásra vár, de addig is folytathatja az alkalmazás használatát.";
+"Dismiss" = "Elutasít";
+
+
 
 /* OTHER STRINGS */
 
