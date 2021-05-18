@@ -51,6 +51,7 @@
 		1BF229F625481BE700051A4A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BF229F525481BE700051A4A /* Preview Assets.xcassets */; };
 		1BF22A012548227A00051A4A /* Main.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1BF229FF2548227A00051A4A /* Main.xcdatamodeld */; };
 		1BFEF4C22653B2C3005F02EB /* SKProduct-LocalizedPrice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BFEF4C12653B2C3005F02EB /* SKProduct-LocalizedPrice.swift */; };
+		1BFEF4C42653B4FA005F02EB /* PurchaseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BFEF4C32653B4FA005F02EB /* PurchaseButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -134,6 +135,7 @@
 		1BF229F725481BE700051A4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1BF22A002548227A00051A4A /* Main.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Main.xcdatamodel; sourceTree = "<group>"; };
 		1BFEF4C12653B2C3005F02EB /* SKProduct-LocalizedPrice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SKProduct-LocalizedPrice.swift"; sourceTree = "<group>"; };
+		1BFEF4C32653B4FA005F02EB /* PurchaseButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -321,6 +323,7 @@
 				1B35218A254825E90056294D /* DataController.swift */,
 				1BAE4A35264BEA360083DC00 /* UnlockManager.swift */,
 				1B297A3125BF094D003E8A6A /* Activities */,
+				1BFEF4C52653B659005F02EB /* Store */,
 				1B0A1FE125483FB6006D0605 /* Extensions */,
 				1B297A2C25BF03E2003E8A6A /* Localization */,
 				1B297A2D25BF03F4003E8A6A /* Configuration */,
@@ -337,6 +340,14 @@
 				1BF229F525481BE700051A4A /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		1BFEF4C52653B659005F02EB /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				1BFEF4C32653B4FA005F02EB /* PurchaseButton.swift */,
+			);
+			path = Store;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -571,6 +582,7 @@
 				1B352199254829B50056294D /* Project-CoreDataHelpers.swift in Sources */,
 				1B548DE3255A4CD900153151 /* SelectSomethingView.swift in Sources */,
 				1B17B8AE255F84A400211431 /* Award.swift in Sources */,
+				1BFEF4C42653B4FA005F02EB /* PurchaseButton.swift in Sources */,
 				1B0A1FDC254839A4006D0605 /* ItemRowView.swift in Sources */,
 				1B35218B254825E90056294D /* DataController.swift in Sources */,
 				1B0A1FDF25483D28006D0605 /* Binding-OnChange.swift in Sources */,
