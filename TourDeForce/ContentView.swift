@@ -51,6 +51,7 @@ struct ContentView: View {
 
     func openURL(_ url: URL) {
         selectedView = ProjectsView.openTag
+        dataController.addProject()
     }
 }
 
