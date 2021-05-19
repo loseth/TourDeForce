@@ -15,7 +15,7 @@
           "locale" : "en_US"
         }
       ],
-      "productID" : "com.codecabal.TourDeForce.unlock",
+      "productID" : "com.selfinit.TourDeForce.unlock",
       "referenceName" : "Unlock Full App",
       "type" : "NonConsumable"
     }

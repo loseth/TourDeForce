@@ -36,7 +36,7 @@ class UnlockManager: NSObject, ObservableObject, SKPaymentTransactionObserver, S
     init(dataController: DataController) {
         self.dataController = dataController
 
-        let productIDs = Set(["com.codecabal.TourDeForce.unlock"])
+        let productIDs = Set(["com.selfinit.TourDeForce.unlock"])
         request = SKProductsRequest(productIdentifiers: productIDs)
 
         super.init()
