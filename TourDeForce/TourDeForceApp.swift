@@ -11,6 +11,7 @@ import SwiftUI
 struct TourDeForceApp: App {
     @StateObject var dataController: DataController
     @StateObject var unlockManager: UnlockManager
+    @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
 
     init() {
         let dataController = DataController()
