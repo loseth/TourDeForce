@@ -200,9 +200,9 @@
 		1B297A2D25BF03F4003E8A6A /* Configuration */ = {
 			isa = PBXGroup;
 			children = (
+				1BAE4A37264BFBB70083DC00 /* Configuration.storekit */,
 				1BF229F725481BE700051A4A /* Info.plist */,
 				1BF229FF2548227A00051A4A /* Main.xcdatamodeld */,
-				1BAE4A37264BFBB70083DC00 /* Configuration.storekit */,
 			);
 			path = Configuration;
 			sourceTree = "<group>";
