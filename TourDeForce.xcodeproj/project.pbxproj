@@ -40,6 +40,11 @@
 		1B9F6E2025C2A577008F7393 /* ProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9F6E1F25C2A577008F7393 /* ProjectTests.swift */; };
 		1B9F6E2425C2B025008F7393 /* AwardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9F6E2325C2B025008F7393 /* AwardTests.swift */; };
 		1B9F6E2825C2BDAC008F7393 /* DevelopmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9F6E2725C2BDAC008F7393 /* DevelopmentTests.swift */; };
+		1BA34FB92657EC240035C2FD /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BA34FB82657EC240035C2FD /* WidgetKit.framework */; };
+		1BA34FBB2657EC240035C2FD /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BA34FBA2657EC240035C2FD /* SwiftUI.framework */; };
+		1BA34FBE2657EC240035C2FD /* TourDeForceWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BA34FBD2657EC240035C2FD /* TourDeForceWidget.swift */; };
+		1BA34FC02657EC240035C2FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BA34FBF2657EC240035C2FD /* Assets.xcassets */; };
+		1BA34FC42657EC240035C2FD /* TourDeForceWidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 1BA34FB62657EC240035C2FD /* TourDeForceWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		1BAD06F025DFBB2E00D27EE1 /* TourDeForceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BAD06EF25DFBB2E00D27EE1 /* TourDeForceUITests.swift */; };
 		1BAE4A36264BEA360083DC00 /* UnlockManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BAE4A35264BEA360083DC00 /* UnlockManager.swift */; };
 		1BB57F0E255F897300F64A4D /* AwardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB57F0D255F897300F64A4D /* AwardsView.swift */; };
@@ -73,6 +78,13 @@
 			remoteGlobalIDString = 1BF229EA25481BDF00051A4A;
 			remoteInfo = TourDeForce;
 		};
+		1BA34FC22657EC240035C2FD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1BF229E325481BDF00051A4A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1BA34FB52657EC240035C2FD;
+			remoteInfo = TourDeForceWidgetExtension;
+		};
 		1BAD06F225DFBB2E00D27EE1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 1BF229E325481BDF00051A4A /* Project object */;
@@ -81,6 +93,20 @@
 			remoteInfo = TourDeForce;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1BA34FC52657EC240035C2FD /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				1BA34FC42657EC240035C2FD /* TourDeForceWidgetExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		1B0A1FD725483386006D0605 /* EditItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditItemView.swift; sourceTree = "<group>"; };
@@ -123,6 +149,12 @@
 		1B9F6E1F25C2A577008F7393 /* ProjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectTests.swift; sourceTree = "<group>"; };
 		1B9F6E2325C2B025008F7393 /* AwardTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AwardTests.swift; sourceTree = "<group>"; };
 		1B9F6E2725C2BDAC008F7393 /* DevelopmentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevelopmentTests.swift; sourceTree = "<group>"; };
+		1BA34FB62657EC240035C2FD /* TourDeForceWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = TourDeForceWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		1BA34FB82657EC240035C2FD /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		1BA34FBA2657EC240035C2FD /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		1BA34FBD2657EC240035C2FD /* TourDeForceWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TourDeForceWidget.swift; sourceTree = "<group>"; };
+		1BA34FBF2657EC240035C2FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1BA34FC12657EC240035C2FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1BAD06ED25DFBB2E00D27EE1 /* TourDeForceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TourDeForceUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BAD06EF25DFBB2E00D27EE1 /* TourDeForceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TourDeForceUITests.swift; sourceTree = "<group>"; };
 		1BAD06F125DFBB2E00D27EE1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -158,6 +190,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1BA34FB32657EC240035C2FD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BA34FBB2657EC240035C2FD /* SwiftUI.framework in Frameworks */,
+				1BA34FB92657EC240035C2FD /* WidgetKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,6 +334,25 @@
 			path = PerformanceTests;
 			sourceTree = "<group>";
 		};
+		1BA34FB72657EC240035C2FD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1BA34FB82657EC240035C2FD /* WidgetKit.framework */,
+				1BA34FBA2657EC240035C2FD /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1BA34FBC2657EC240035C2FD /* TourDeForceWidget */ = {
+			isa = PBXGroup;
+			children = (
+				1BA34FBD2657EC240035C2FD /* TourDeForceWidget.swift */,
+				1BA34FBF2657EC240035C2FD /* Assets.xcassets */,
+				1BA34FC12657EC240035C2FD /* Info.plist */,
+			);
+			path = TourDeForceWidget;
+			sourceTree = "<group>";
+		};
 		1BAD06EE25DFBB2E00D27EE1 /* TourDeForceUITests */ = {
 			isa = PBXGroup;
 			children = (
@@ -309,6 +369,8 @@
 				1B297A3E25C17B3C003E8A6A /* TourDeForceTests */,
 				1B52DC4F25D55C2F00ED1B5E /* PerformanceTests */,
 				1BAD06EE25DFBB2E00D27EE1 /* TourDeForceUITests */,
+				1BA34FBC2657EC240035C2FD /* TourDeForceWidget */,
+				1BA34FB72657EC240035C2FD /* Frameworks */,
 				1BF229EC25481BDF00051A4A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -320,6 +382,7 @@
 				1B297A3D25C17B3C003E8A6A /* TourDeForceTests.xctest */,
 				1B52DC4E25D55C2F00ED1B5E /* PerformanceTests.xctest */,
 				1BAD06ED25DFBB2E00D27EE1 /* TourDeForceUITests.xctest */,
+				1BA34FB62657EC240035C2FD /* TourDeForceWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -401,6 +464,23 @@
 			productReference = 1B52DC4E25D55C2F00ED1B5E /* PerformanceTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		1BA34FB52657EC240035C2FD /* TourDeForceWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1BA34FC82657EC240035C2FD /* Build configuration list for PBXNativeTarget "TourDeForceWidgetExtension" */;
+			buildPhases = (
+				1BA34FB22657EC240035C2FD /* Sources */,
+				1BA34FB32657EC240035C2FD /* Frameworks */,
+				1BA34FB42657EC240035C2FD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TourDeForceWidgetExtension;
+			productName = TourDeForceWidgetExtension;
+			productReference = 1BA34FB62657EC240035C2FD /* TourDeForceWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		1BAD06EC25DFBB2E00D27EE1 /* TourDeForceUITests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1BAD06F625DFBB2E00D27EE1 /* Build configuration list for PBXNativeTarget "TourDeForceUITests" */;
@@ -427,10 +507,12 @@
 				1BF229E725481BDF00051A4A /* Sources */,
 				1BF229E825481BDF00051A4A /* Frameworks */,
 				1BF229E925481BDF00051A4A /* Resources */,
+				1BA34FC52657EC240035C2FD /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				1BA34FC32657EC240035C2FD /* PBXTargetDependency */,
 			);
 			name = TourDeForce;
 			productName = TourDeForce;
@@ -443,7 +525,7 @@
 		1BF229E325481BDF00051A4A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1240;
+				LastSwiftUpdateCheck = 1250;
 				LastUpgradeCheck = 1230;
 				TargetAttributes = {
 					1B297A3C25C17B3C003E8A6A = {
@@ -453,6 +535,9 @@
 					1B52DC4D25D55C2F00ED1B5E = {
 						CreatedOnToolsVersion = 12.4;
 						TestTargetID = 1BF229EA25481BDF00051A4A;
+					};
+					1BA34FB52657EC240035C2FD = {
+						CreatedOnToolsVersion = 12.5;
 					};
 					1BAD06EC25DFBB2E00D27EE1 = {
 						CreatedOnToolsVersion = 12.4;
@@ -481,6 +566,7 @@
 				1B297A3C25C17B3C003E8A6A /* TourDeForceTests */,
 				1B52DC4D25D55C2F00ED1B5E /* PerformanceTests */,
 				1BAD06EC25DFBB2E00D27EE1 /* TourDeForceUITests */,
+				1BA34FB52657EC240035C2FD /* TourDeForceWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -499,6 +585,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1BA34FB42657EC240035C2FD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BA34FC02657EC240035C2FD /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -568,6 +662,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1BA34FB22657EC240035C2FD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BA34FBE2657EC240035C2FD /* TourDeForceWidget.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1BAD06E925DFBB2E00D27EE1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -627,6 +729,11 @@
 			isa = PBXTargetDependency;
 			target = 1BF229EA25481BDF00051A4A /* TourDeForce */;
 			targetProxy = 1B52DC5325D55C2F00ED1B5E /* PBXContainerItemProxy */;
+		};
+		1BA34FC32657EC240035C2FD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1BA34FB52657EC240035C2FD /* TourDeForceWidgetExtension */;
+			targetProxy = 1BA34FC22657EC240035C2FD /* PBXContainerItemProxy */;
 		};
 		1BAD06F325DFBB2E00D27EE1 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -747,6 +854,50 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TourDeForce.app/TourDeForce";
+			};
+			name = Release;
+		};
+		1BA34FC62657EC240035C2FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2APR69P27L;
+				INFOPLIST_FILE = TourDeForceWidget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.selfinit.tourdeforce.TourDeForceWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1BA34FC72657EC240035C2FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2APR69P27L;
+				INFOPLIST_FILE = TourDeForceWidget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.selfinit.tourdeforce.TourDeForceWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -911,6 +1062,7 @@
 		1BF229FB25481BE700051A4A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -933,6 +1085,7 @@
 		1BF229FC25481BE700051A4A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -969,6 +1122,15 @@
 			buildConfigurations = (
 				1B52DC5625D55C2F00ED1B5E /* Debug */,
 				1B52DC5725D55C2F00ED1B5E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1BA34FC82657EC240035C2FD /* Build configuration list for PBXNativeTarget "TourDeForceWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1BA34FC62657EC240035C2FD /* Debug */,
+				1BA34FC72657EC240035C2FD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
